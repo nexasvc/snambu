@@ -54,17 +54,25 @@ export default function MobileOverlay({ filters, onShowAbout }: MobileOverlayPro
   return (
     <>
       <div className="absolute top-4 left-4 right-4 z-20 space-y-3 pointer-events-none">
-        <div className="flex gap-2 pointer-events-auto">
-          <div className="flex-1 relative">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
-            <input 
-              type="text" 
-              placeholder="기업성장 브릿지 Map"
-              value={filters.searchTerm}
-              onChange={(e) => filters.setSearchTerm(e.target.value)}
-              className="w-full pl-11 pr-4 py-3.5 bg-white rounded-2xl shadow-xl text-sm focus:outline-none border-none"
+        <div className="flex flex-col gap-3 pointer-events-auto">
+          <div className="px-1">
+            <img 
+              src={`${import.meta.env.BASE_URL}assets/common/seoulnambu_plus_web_optimized.webp`} 
+              alt="서울남부 고용복지+센터" 
+              className="h-6 w-auto object-contain" 
             />
           </div>
+          <div className="flex gap-2">
+            <div className="flex-1 relative">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
+              <input 
+                type="text" 
+                placeholder="기업성장 브릿지 Map"
+                value={filters.searchTerm}
+                onChange={(e) => filters.setSearchTerm(e.target.value)}
+                className="w-full pl-11 pr-4 py-3.5 bg-white rounded-2xl shadow-xl text-sm focus:outline-none border-none"
+              />
+            </div>
           <button 
             onClick={onShowAbout}
             className="p-3.5 bg-brand-primary text-white rounded-2xl shadow-xl transition-transform active:scale-95 pointer-events-auto"
@@ -86,6 +94,7 @@ export default function MobileOverlay({ filters, onShowAbout }: MobileOverlayPro
             )}
           </button>
         </div>
+      </div>
         
         <div className="flex gap-2 overflow-x-auto no-scrollbar pb-1 pointer-events-auto">
           {REGIONS.map(region => (

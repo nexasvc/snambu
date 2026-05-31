@@ -80,44 +80,51 @@ export default function Sidebar({
   return (
     <div className="w-full h-full flex flex-col bg-white border-r border-gray-100 shadow-xl z-10">
       {/* Search & Filters */}
-      <div className="p-6 border-b border-gray-50 space-y-4">
-        <div className="flex flex-col gap-4">
-          <div className="bg-brand-primary border border-brand-primary shadow-md shadow-brand-primary/20 rounded-2xl p-4">
-            <h1 className="text-xl font-black text-white flex items-center gap-2">
-              <MapPin className="text-white" fill="white" fillOpacity={0.2} />
+      <div className="p-5 border-b border-gray-50 space-y-3">
+        <div className="flex flex-col gap-3">
+          <div className="px-1">
+            <img 
+              src={`${import.meta.env.BASE_URL}assets/common/seoulnambu_plus_web_optimized.webp`} 
+              alt="서울남부 고용복지+센터" 
+              className="h-6 w-auto object-contain" 
+            />
+          </div>
+          <div className="bg-brand-primary border border-brand-primary shadow-md shadow-brand-primary/20 rounded-2xl p-3.5">
+            <h1 className="text-lg font-black text-white flex items-center gap-2">
+              <MapPin className="text-white" fill="white" fillOpacity={0.2} size={18} />
               기업성장 브릿지 Map
             </h1>
           </div>
           <button 
             onClick={onShowAbout}
-            className="w-full flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 rounded-2xl border border-gray-100 transition-colors group"
+            className="w-full flex items-center justify-between p-3 bg-gray-50 hover:bg-gray-100 rounded-2xl border border-gray-100 transition-colors group"
           >
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-white rounded-xl shadow-sm group-hover:scale-110 transition-transform">
-                <Building2 className="text-brand-primary" size={20} />
+              <div className="p-1.5 bg-white rounded-xl shadow-sm group-hover:scale-110 transition-transform">
+                <Building2 className="text-brand-primary" size={16} />
               </div>
               <div className="text-left">
-                <p className="text-[10px] font-black text-brand-primary uppercase tracking-tighter">Information</p>
-                <p className="text-sm font-bold text-gray-900">서비스 소개</p>
+                <p className="text-[9px] font-black text-brand-primary uppercase tracking-tighter">Information</p>
+                <p className="text-xs font-bold text-gray-900">서비스 소개</p>
               </div>
             </div>
-            <ChevronRight size={18} className="text-gray-400 group-hover:translate-x-1 transition-transform" />
+            <ChevronRight size={16} className="text-gray-400 group-hover:translate-x-1 transition-transform" />
           </button>
-          <div className="flex items-center justify-between">
-            <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider px-1">기업 탐색</p>
-            {(filters.searchTerm || filters.selectedRegions.length > 0 || filters.selectedCerts.length > 0 || filters.onlyHiring) && (
+          
+          {(filters.searchTerm || filters.selectedRegions.length > 0 || filters.selectedCerts.length > 0 || filters.onlyHiring) && (
+            <div className="flex justify-end -mb-1">
               <button 
                 onClick={filters.resetFilters}
-                className="flex items-center gap-1.5 text-[11px] font-bold text-gray-400 hover:text-brand-primary transition-colors group"
+                className="flex items-center gap-1.5 text-[10px] font-bold text-gray-400 hover:text-brand-primary transition-colors group"
               >
-                <RotateCcw size={12} className="group-active:rotate-[-180deg] transition-transform duration-500" />
-                초기화
+                <RotateCcw size={10} className="group-active:rotate-[-180deg] transition-transform duration-500" />
+                필터 초기화
               </button>
-            )}
-          </div>
+            </div>
+          )}
         </div>
 
-        <div className="space-y-3">
+        <div className="space-y-2">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
             <input 
