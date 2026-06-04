@@ -451,7 +451,78 @@
         "work24": false,
         "lastChecked": "2026-05-29T15:04:01.550Z"
       }
+    },
+    {
+      "id": "1100015",
+      "name": "(주)넥스블루",
+      "region": "영등포구",
+      "address": "서울특별시 영등포구 경인로 775",
+      "logo": "넥스블루_type1(누끼).png",
+      "industry": "IT/SW",
+      "industryDetail": "컴퓨터 및 주변장치, 소프트웨어소매업 (IT인프라컨설팅구축, 유지보수)",
+      "employees": 21,
+      "certifications": [
+        "지역우수",
+        "청년도약"
+      ],
+      "governmentCertifications": [
+        "이노비즈 인증",
+        "청년친화강소 기업 선정",
+        "연구개발 전담부서운영",
+        "기술역량우수기업 인증",
+        "특허 등록"
+      ],
+      "awardAchievements": [
+        "IBM Korea Partner of the Year S/W Data 수상",
+        "팀스톤 SELECT Expert Partner 수상"
+      ],
+      "benefits": "1. 사내근로복지기금 \"복지온\" 운영\n2. 10 to 18, 점심시간 1시간 30분 (주 32.5시간)\n3. 연차 외 Refresh 휴가(연 3일),생일휴가(1일)\n    별도 지급 \n4. 연 1회 해외 워크샵 지원",
+      "workEnvironment": [],
+      "images": [
+        "사무실입구.jpg",
+        "회의실.jpg",
+        "카페.jpg"
+      ],
+      "website": "http://www.nexblue.co.kr/",
+      "description": "2011년 설립된 넥스블루는 온프레미스·클라우드기반의 플랫폼,데이터,모니터링 관련 SW설계·구축부터 유지보수까지 전 과정의 IT인프라로 통합컨설팅 및 All-in-One 토탈솔루션을 제공하는 전문기업입니다.",
+      "map_display_status": "VISIBLE",
+      "lat": 37.5147541,
+      "lng": 126.8989475
+    },
+    {
+      "id": "1100016",
+      "name": "주식회사 휴런",
+      "region": "영등포구",
+      "address": "서울특별시 영등포구 영등포로 150",
+      "logo": "[휴런] CI-03.png",
+      "industry": "IT/SW",
+      "industryDetail": "인공지능(AI) 기반 의료영상 분석 소프트웨어 개발. 뇌졸중, 치매, 파킨슨병 등 뇌신경계 질환 진단·분석 솔루션 연구개발.",
+      "employees": 44,
+      "certifications": [
+        "지역우수",
+        "청년도약"
+      ],
+      "governmentCertifications": [
+        "혁신의료기기 지정",
+        "벤처기업 인증",
+        "기업부설연구소 운영",
+        "기술특례상장 추진 기업"
+      ],
+      "awardAchievements": [
+        "보건의료 및AI 분야 정부과제 수행 다수",
+        "국내외 학회 및 연구성과 보유"
+      ],
+      "benefits": "1. 시차출근제 운영, 하계휴가 제공 \n2. 종합건강검진 지원, 경조사 지원 \n3. 직무 교육 및 역량개발 지원 \n4. 자유로운 연차 사용\n5. 자율과 책임 기반의 업무 문화 \r\n6. 직무 간 경계를 최소화한 협업 중심 조직 \n7. 빠른 의사결정 및 실행 중심 업무 환경 \r\n8. 스타트업 특성상 다양한 업무 경험 가능 \n9. 회사 성장에 직접 참여 및 역량 확장 가능한 환경",
+      "workEnvironment": [],
+      "images": [
+        "[휴런] CI-05.png"
+      ],
+      "website": "https://www.heuron.co.kr",
+      "description": "휴런은AI 기반 뇌질환 진단 솔루션을 개발하는 의료AI 기업으로, 뇌졸중·치매·파킨슨병 등 뇌신경계 질환의 조기 진단 및 치료를 지원하는 혁신 의료기술을 개발하고 있습니다.",
+      "map_display_status": "VISIBLE",
+      "lat": 37.5187168,
+      "lng": 126.9035606
     }
   ],
-  "lastUpdated": "2026-05-29T15:04:04.920Z"
+  "lastUpdated": "2026-06-04T14:01:13.068Z"
 }
