@@ -33,7 +33,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:07:01.056Z"
+        "lastChecked": "2026-06-04T14:15:14.019Z"
       }
     },
     {
@@ -70,7 +70,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:07:11.760Z"
+        "lastChecked": "2026-06-04T14:15:26.870Z"
       }
     },
     {
@@ -113,7 +113,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:07:20.661Z"
+        "lastChecked": "2026-06-04T14:15:36.443Z"
       }
     },
     {
@@ -157,7 +157,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:07:29.856Z"
+        "lastChecked": "2026-06-04T14:15:45.894Z"
       }
     },
     {
@@ -189,7 +189,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:07:39.015Z"
+        "lastChecked": "2026-06-04T14:15:55.775Z"
       }
     },
     {
@@ -223,7 +223,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:07:48.446Z"
+        "lastChecked": "2026-06-04T14:16:05.795Z"
       }
     },
     {
@@ -264,7 +264,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:07:58.115Z"
+        "lastChecked": "2026-06-04T14:16:15.872Z"
       }
     },
     {
@@ -305,7 +305,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:08:07.255Z"
+        "lastChecked": "2026-06-04T14:16:26.094Z"
       }
     },
     {
@@ -341,7 +341,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:08:16.465Z"
+        "lastChecked": "2026-06-04T14:16:35.092Z"
       }
     },
     {
@@ -376,7 +376,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:08:26.034Z"
+        "lastChecked": "2026-06-04T14:16:44.391Z"
       }
     },
     {
@@ -411,7 +411,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:08:35.078Z"
+        "lastChecked": "2026-06-04T14:16:54.247Z"
       }
     },
     {
@@ -449,7 +449,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:08:44.232Z"
+        "lastChecked": "2026-06-04T14:17:03.936Z"
       }
     },
     {
@@ -492,7 +492,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:08:53.193Z"
+        "lastChecked": "2026-06-04T14:17:13.102Z"
       }
     },
     {
@@ -523,7 +523,7 @@
       "images": [
         "[휴런] CI-05.png"
       ],
-      "website": "http://www.heuron.co.kr",
+      "website": "https://iheuron.com/",
       "description": "휴런은AI 기반 뇌질환 진단 솔루션을 개발하는 의료AI 기업으로, 뇌졸중·치매·파킨슨병 등 뇌신경계 질환의 조기 진단 및 치료를 지원하는 혁신 의료기술을 개발하고 있습니다.",
       "map_display_status": "VISIBLE",
       "lat": 37.5187168,
@@ -532,9 +532,9 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:09:02.414Z"
+        "lastChecked": "2026-06-04T14:17:22.188Z"
       }
     }
   ],
-  "lastUpdated": "2026-06-04T14:09:11.388Z"
+  "lastUpdated": "2026-06-04T14:17:31.856Z"
 }
