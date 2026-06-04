@@ -31,9 +31,9 @@
       "lng": 126.8913475,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-05-29T15:03:18.364Z"
+        "lastChecked": "2026-06-04T14:07:01.056Z"
       }
     },
     {
@@ -68,9 +68,9 @@
       "lng": 126.9262455,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-05-29T15:03:25.749Z"
+        "lastChecked": "2026-06-04T14:07:11.760Z"
       }
     },
     {
@@ -111,9 +111,9 @@
       "lng": 126.8233268,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-05-29T15:03:32.231Z"
+        "lastChecked": "2026-06-04T14:07:20.661Z"
       }
     },
     {
@@ -155,9 +155,9 @@
       "lng": 126.928296,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-05-29T15:03:35.689Z"
+        "lastChecked": "2026-06-04T14:07:29.856Z"
       }
     },
     {
@@ -187,9 +187,9 @@
       "lng": 126.894037,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-05-29T15:03:39.143Z"
+        "lastChecked": "2026-06-04T14:07:39.015Z"
       }
     },
     {
@@ -221,9 +221,9 @@
       "lng": 126.8200471,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-05-29T15:03:42.204Z"
+        "lastChecked": "2026-06-04T14:07:48.446Z"
       }
     },
     {
@@ -262,9 +262,9 @@
       "lng": 126.8611499,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-05-29T15:03:45.504Z"
+        "lastChecked": "2026-06-04T14:07:58.115Z"
       }
     },
     {
@@ -303,9 +303,9 @@
       "lng": 126.890132,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-05-29T15:03:49.106Z"
+        "lastChecked": "2026-06-04T14:08:07.255Z"
       }
     },
     {
@@ -339,9 +339,9 @@
       "lng": 126.9050405,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-05-29T15:03:52.297Z"
+        "lastChecked": "2026-06-04T14:08:16.465Z"
       }
     },
     {
@@ -374,9 +374,9 @@
       "lng": 126.8917848,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-05-29T15:03:55.319Z"
+        "lastChecked": "2026-06-04T14:08:26.034Z"
       }
     },
     {
@@ -411,7 +411,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-05-29T15:03:58.343Z"
+        "lastChecked": "2026-06-04T14:08:35.078Z"
       }
     },
     {
@@ -447,9 +447,9 @@
       "lng": 126.9035606,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-05-29T15:04:01.550Z"
+        "lastChecked": "2026-06-04T14:08:44.232Z"
       }
     },
     {
@@ -487,7 +487,13 @@
       "description": "2011년 설립된 넥스블루는 온프레미스·클라우드기반의 플랫폼,데이터,모니터링 관련 SW설계·구축부터 유지보수까지 전 과정의 IT인프라로 통합컨설팅 및 All-in-One 토탈솔루션을 제공하는 전문기업입니다.",
       "map_display_status": "VISIBLE",
       "lat": 37.5147541,
-      "lng": 126.8989475
+      "lng": 126.8989475,
+      "jobs": {
+        "saramin": true,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-04T14:08:53.193Z"
+      }
     },
     {
       "id": "1100016",
@@ -512,17 +518,23 @@
         "보건의료 및AI 분야 정부과제 수행 다수",
         "국내외 학회 및 연구성과 보유"
       ],
-      "benefits": "1. 시차출근제 운영, 하계휴가 제공 \n2. 종합건강검진 지원, 경조사 지원 \n3. 직무 교육 및 역량개발 지원 \n4. 자유로운 연차 사용\n5. 자율과 책임 기반의 업무 문화 \r\n6. 직무 간 경계를 최소화한 협업 중심 조직 \n7. 빠른 의사결정 및 실행 중심 업무 환경 \r\n8. 스타트업 특성상 다양한 업무 경험 가능 \n9. 회사 성장에 직접 참여 및 역량 확장 가능한 환경",
+      "benefits": "1. 시차출근제 운영, 하계휴가 제공 \n2. 종합건강검진 지원, 경조사 지원 \n3. 직무 교육 및 역량개발 지원 \n4. 자유로운 연차 사용\n5. 자율과 책임 기반의 업무 문화 \n6. 직무 간 경계를 최소화한 협업 중심 조직 \n7. 빠른 의사결정 및 실행 중심 업무 환경 \n8. 스타트업 특성상 다양한 업무 경험 가능 \n9. 회사성장에 직접 참여 및 역량확장 가능한 환경",
       "workEnvironment": [],
       "images": [
         "[휴런] CI-05.png"
       ],
-      "website": "https://www.heuron.co.kr",
+      "website": "http://www.heuron.co.kr",
       "description": "휴런은AI 기반 뇌질환 진단 솔루션을 개발하는 의료AI 기업으로, 뇌졸중·치매·파킨슨병 등 뇌신경계 질환의 조기 진단 및 치료를 지원하는 혁신 의료기술을 개발하고 있습니다.",
       "map_display_status": "VISIBLE",
       "lat": 37.5187168,
-      "lng": 126.9035606
+      "lng": 126.9035606,
+      "jobs": {
+        "saramin": true,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-04T14:09:02.414Z"
+      }
     }
   ],
-  "lastUpdated": "2026-06-04T14:01:13.068Z"
+  "lastUpdated": "2026-06-04T14:09:11.388Z"
 }
