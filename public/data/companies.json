@@ -33,7 +33,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:34:33.410Z"
+        "lastChecked": "2026-06-11T06:53:04.284Z"
       }
     },
     {
@@ -70,7 +70,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:34:43.662Z"
+        "lastChecked": "2026-06-11T06:53:13.487Z"
       }
     },
     {
@@ -113,7 +113,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:34:52.512Z"
+        "lastChecked": "2026-06-11T06:53:25.100Z"
       }
     },
     {
@@ -157,7 +157,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:35:02.191Z"
+        "lastChecked": "2026-06-11T06:53:34.091Z"
       }
     },
     {
@@ -189,7 +189,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:35:12.203Z"
+        "lastChecked": "2026-06-11T06:53:42.811Z"
       }
     },
     {
@@ -223,7 +223,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:35:21.413Z"
+        "lastChecked": "2026-06-11T06:53:51.840Z"
       }
     },
     {
@@ -264,7 +264,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:35:31.428Z"
+        "lastChecked": "2026-06-11T06:54:00.631Z"
       }
     },
     {
@@ -305,7 +305,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:35:40.989Z"
+        "lastChecked": "2026-06-11T06:54:09.358Z"
       }
     },
     {
@@ -341,7 +341,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:35:50.879Z"
+        "lastChecked": "2026-06-11T06:54:18.233Z"
       }
     },
     {
@@ -376,7 +376,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:35:59.913Z"
+        "lastChecked": "2026-06-11T06:54:26.799Z"
       }
     },
     {
@@ -411,7 +411,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:36:09.310Z"
+        "lastChecked": "2026-06-11T06:54:36.328Z"
       }
     },
     {
@@ -449,7 +449,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:36:18.701Z"
+        "lastChecked": "2026-06-11T06:54:44.971Z"
       }
     },
     {
@@ -492,7 +492,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:36:28.408Z"
+        "lastChecked": "2026-06-11T06:54:53.646Z"
       }
     },
     {
@@ -532,7 +532,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:36:38.194Z"
+        "lastChecked": "2026-06-11T06:55:02.672Z"
       }
     },
     {
@@ -543,7 +543,7 @@
       "logo": "(주)그룹원로고.jpg",
       "industry": "건설, 서비스",
       "industryDetail": "엔지니어링, 안전진단 (원전 및 사회 전반 시설의 구조안전진단, 구조 설계/검토, 내진성능평가 등)",
-      "employees": 0,
+      "employees": 29,
       "certifications": [
         "지역우수"
       ],
@@ -570,9 +570,43 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:36:48.082Z"
+        "lastChecked": "2026-06-11T06:55:10.827Z"
+      }
+    },
+    {
+      "id": "1100018",
+      "name": "(주)킴블스",
+      "region": "강서구",
+      "address": "서울특별시 강서구 국회대로7길 63",
+      "logo": "킴블스로고.jpg",
+      "industry": "제조",
+      "industryDetail": "근무복, 작업복 및 유사의복 제조업",
+      "employees": 47,
+      "certifications": [
+        "지역우수",
+        "청년도약"
+      ],
+      "governmentCertifications": [],
+      "awardAchievements": [],
+      "benefits": "1.경조휴가,반차,육아휴직,남성출산휴가\n2.직무능력향상교육,자격증취득지원\n3.우수사원포상,퇴직연금,명절선물,각종 수당,경조사 지원\n4.구내식당,주차장제공,휴게실/수면실,회사전용사옥\n5. 장애인 화장실,점심식사제공,가족돌봄휴가",
+      "workEnvironment": [],
+      "images": [
+        "킴블스사옥.png",
+        "킴블스사진1.jpg",
+        "킴블스사진2.jpg"
+      ],
+      "website": "https://www.kimbulls.co.kr/",
+      "description": "혁신적인 디자인과 전문적인 기술력으로 고품질의 봉제 제품을 제작합니다. 공정한 프로세스와 고객 만족을 최우선으로 하여 신뢰할 수 있는 파트너로 자리매김하고 있습니다.",
+      "map_display_status": "VISIBLE",
+      "lat": 37.5295614,
+      "lng": 126.8575995,
+      "jobs": {
+        "saramin": true,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-11T06:55:19.979Z"
       }
     }
   ],
-  "lastUpdated": "2026-06-11T04:36:58.275Z"
+  "lastUpdated": "2026-06-11T06:55:28.242Z"
 }
