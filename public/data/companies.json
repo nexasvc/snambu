@@ -33,7 +33,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:11:19.963Z"
+        "lastChecked": "2026-06-11T10:42:17.633Z"
       }
     },
     {
@@ -67,10 +67,10 @@
       "lat": 37.5300685,
       "lng": 126.9262455,
       "jobs": {
-        "saramin": false,
+        "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:11:29.449Z"
+        "lastChecked": "2026-06-11T10:42:27.844Z"
       }
     },
     {
@@ -113,7 +113,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:11:41.851Z"
+        "lastChecked": "2026-06-11T10:42:37.491Z"
       }
     },
     {
@@ -157,7 +157,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:11:50.735Z"
+        "lastChecked": "2026-06-11T10:42:47.499Z"
       }
     },
     {
@@ -189,7 +189,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:11:59.562Z"
+        "lastChecked": "2026-06-11T10:42:56.997Z"
       }
     },
     {
@@ -223,7 +223,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:12:08.138Z"
+        "lastChecked": "2026-06-11T10:43:06.356Z"
       }
     },
     {
@@ -264,7 +264,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:12:17.465Z"
+        "lastChecked": "2026-06-11T10:43:16.126Z"
       }
     },
     {
@@ -305,7 +305,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:12:26.651Z"
+        "lastChecked": "2026-06-11T10:43:25.892Z"
       }
     },
     {
@@ -341,7 +341,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:12:35.113Z"
+        "lastChecked": "2026-06-11T10:43:35.430Z"
       }
     },
     {
@@ -376,7 +376,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:12:43.742Z"
+        "lastChecked": "2026-06-11T10:43:45.099Z"
       }
     },
     {
@@ -411,7 +411,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:12:52.775Z"
+        "lastChecked": "2026-06-11T10:43:54.703Z"
       }
     },
     {
@@ -446,10 +446,10 @@
       "lat": 37.5187168,
       "lng": 126.9035606,
       "jobs": {
-        "saramin": false,
+        "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:13:01.309Z"
+        "lastChecked": "2026-06-11T10:44:04.242Z"
       }
     },
     {
@@ -492,7 +492,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:13:13.658Z"
+        "lastChecked": "2026-06-11T10:44:13.613Z"
       }
     },
     {
@@ -532,7 +532,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:13:22.201Z"
+        "lastChecked": "2026-06-11T10:44:23.113Z"
       }
     },
     {
@@ -570,7 +570,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:13:31.210Z"
+        "lastChecked": "2026-06-11T10:44:32.529Z"
       }
     },
     {
@@ -604,7 +604,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:13:40.590Z"
+        "lastChecked": "2026-06-11T10:44:42.615Z"
       }
     },
     {
@@ -637,7 +637,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:13:49.647Z"
+        "lastChecked": "2026-06-11T10:44:52.043Z"
       }
     },
     {
@@ -676,7 +676,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:13:58.134Z"
+        "lastChecked": "2026-06-11T10:45:01.422Z"
       }
     },
     {
@@ -713,7 +713,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:14:06.884Z"
+        "lastChecked": "2026-06-11T10:45:11.068Z"
       }
     },
     {
@@ -760,9 +760,81 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T10:14:15.639Z"
+        "lastChecked": "2026-06-11T10:45:20.339Z"
+      }
+    },
+    {
+      "id": "1100023",
+      "name": "(주)조이앤비즈",
+      "region": "영등포구",
+      "address": "서울특별시 영등포구 양평로21길 26",
+      "logo": "조이앤비즈logo.png",
+      "industry": "IT/SW",
+      "industryDetail": "금융솔루션 개발 및 컨설팅(퇴직연금, 자산운용, AI 로보어드바이저)",
+      "employees": 112,
+      "certifications": [
+        "지역우수",
+        "청년도약"
+      ],
+      "governmentCertifications": [
+        "청년친화강소기업"
+      ],
+      "awardAchievements": [],
+      "benefits": "1. 리프레시 휴가, 자기개발비 지원, 워크샵\n2. 장기근속 포상, 사내동호회, 건강검진 지원",
+      "workEnvironment": [],
+      "images": [
+        "조이앤비즈사옥.png"
+      ],
+      "website": "http://www.joynbiz.co.kr/company/company01.jsp",
+      "description": "㈜ 조이앤비즈는 급변하는 금융환경과 정보기술의 진화에 능동적으로 대처하고 경쟁력 있는 금융솔루션을 개발 보급하고 있으며, 그동안 축적된 노하우를 활용하여 최적의 솔루션과 컨설팅 능력을 인정받아 오고 있습니다.\n우리 임직원 모두는 [고객의 성공이 나의 성공]이라는 사명감으로 고객 여러분의 기대에 부응하겠습니다.\n앞으로, ㈜ 조이앤비즈는 금융솔루션 분야에서 컨설팅 뿐만 아니라 정보기술 분야에서도 세계적으로 인정받는 글로벌 기업이 되겠습니다.",
+      "map_display_status": "VISIBLE",
+      "lat": 37.536165,
+      "lng": 126.8918554,
+      "jobs": {
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-11T10:45:29.929Z"
+      }
+    },
+    {
+      "id": "1100024",
+      "name": "(주)온품",
+      "region": "영등포구",
+      "address": "서울특별시 영등포구 당산로49길 13",
+      "logo": "온품 로고.JPG",
+      "industry": "제조",
+      "industryDetail": "전파측정장치 방향탐지시스템, 지진 및 재난예경보 사업",
+      "employees": 0,
+      "certifications": [
+        "지역우수"
+      ],
+      "governmentCertifications": [
+        "조달청 우수제품지정(통합배선반시스템)",
+        "ICT 융합 품질인증",
+        "K마크 인증",
+        "소프트웨어품질인증(GS인증) 1등급"
+      ],
+      "awardAchievements": [],
+      "benefits": "1. 자기개발비, 건강검진비, 장기근속 포상 지원\n2. 직업능력향상교육,유연근무제",
+      "workEnvironment": [],
+      "images": [
+        "온품기업1.png",
+        "온품4.jpg",
+        "온품3.JPG"
+      ],
+      "website": "https://onpoom.co.kr/",
+      "description": "(주)온품은 전파감시·재난경보 분야의 글로벌 강소기업입니다. 국산화 기술로 세계 시장을 개척하고, 전 직원 정규직화와 성과 공유로 노사 상생을 실천합니다.",
+      "map_display_status": "VISIBLE",
+      "lat": 37.5359593,
+      "lng": 126.9014962,
+      "jobs": {
+        "saramin": true,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-11T10:45:39.830Z"
       }
     }
   ],
-  "lastUpdated": "2026-06-11T10:20:10.156Z"
+  "lastUpdated": "2026-06-11T10:45:49.140Z"
 }
