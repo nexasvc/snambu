@@ -31,9 +31,9 @@
       "lng": 126.8913475,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:53:04.284Z"
+        "lastChecked": "2026-06-11T07:11:31.019Z"
       }
     },
     {
@@ -68,9 +68,9 @@
       "lng": 126.9262455,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:53:13.487Z"
+        "lastChecked": "2026-06-11T07:11:37.405Z"
       }
     },
     {
@@ -111,9 +111,9 @@
       "lng": 126.8233268,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:53:25.100Z"
+        "lastChecked": "2026-06-11T07:11:40.999Z"
       }
     },
     {
@@ -155,9 +155,9 @@
       "lng": 126.928296,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:53:34.091Z"
+        "lastChecked": "2026-06-11T07:11:44.204Z"
       }
     },
     {
@@ -187,9 +187,9 @@
       "lng": 126.894037,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:53:42.811Z"
+        "lastChecked": "2026-06-11T07:11:47.798Z"
       }
     },
     {
@@ -221,9 +221,9 @@
       "lng": 126.8200471,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:53:51.840Z"
+        "lastChecked": "2026-06-11T07:11:51.003Z"
       }
     },
     {
@@ -262,9 +262,9 @@
       "lng": 126.8611499,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:54:00.631Z"
+        "lastChecked": "2026-06-11T07:11:54.507Z"
       }
     },
     {
@@ -303,9 +303,9 @@
       "lng": 126.890132,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:54:09.358Z"
+        "lastChecked": "2026-06-11T07:11:58.114Z"
       }
     },
     {
@@ -339,9 +339,9 @@
       "lng": 126.9050405,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:54:18.233Z"
+        "lastChecked": "2026-06-11T07:12:01.263Z"
       }
     },
     {
@@ -374,9 +374,9 @@
       "lng": 126.8917848,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:54:26.799Z"
+        "lastChecked": "2026-06-11T07:12:04.706Z"
       }
     },
     {
@@ -409,9 +409,9 @@
       "lng": 126.9021242,
       "jobs": {
         "saramin": false,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:54:36.328Z"
+        "lastChecked": "2026-06-11T07:12:07.998Z"
       }
     },
     {
@@ -447,9 +447,9 @@
       "lng": 126.9035606,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:54:44.971Z"
+        "lastChecked": "2026-06-11T07:12:11.529Z"
       }
     },
     {
@@ -490,9 +490,9 @@
       "lng": 126.8989475,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:54:53.646Z"
+        "lastChecked": "2026-06-11T07:12:15.031Z"
       }
     },
     {
@@ -532,7 +532,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T06:55:02.672Z"
+        "lastChecked": "2026-06-11T07:12:18.312Z"
       }
     },
     {
@@ -568,9 +568,9 @@
       "lng": 126.8619549,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T06:55:10.827Z"
+        "lastChecked": "2026-06-11T07:12:22.531Z"
       }
     },
     {
@@ -602,11 +602,44 @@
       "lng": 126.8575995,
       "jobs": {
         "saramin": true,
+        "jobkorea": true,
+        "work24": false,
+        "lastChecked": "2026-06-11T07:12:27.061Z"
+      }
+    },
+    {
+      "id": "1100019",
+      "name": "(주)비엠미디어",
+      "region": "강서구",
+      "address": "서울특별시 강서구 강서로56길 56",
+      "logo": "비엠미디어 로고.JPG",
+      "industry": "서비스",
+      "industryDetail": "광고 영상 콘텐츠 제작",
+      "employees": 15,
+      "certifications": [
+        "청년도약"
+      ],
+      "governmentCertifications": [],
+      "awardAchievements": [],
+      "benefits": "1. 장기근속자 포상\n2. 사내휴게실 운영",
+      "workEnvironment": [],
+      "images": [
+        "비엠미디어1.JPG",
+        "비엠미디어2.JPG",
+        "비엠미디어3.JPG"
+      ],
+      "website": "http://bmmedia.co.kr/bmmedia/",
+      "description": "비엠미디어는 다년간 축적된 콘텐츠 분야의 경험과 노하우, 탄탄한 네트워크를 기반으로\n다양한 사업 영역으로 확장을 이어가며, 변화하는 국내 미디어 콘텐츠 환경에 빠르게 대응해왔습니다.\n강한 파급력을 지닌 셀럽 및 크리에이터와의 협업, 차별화된 콘텐츠 제작을 통해\n비엠미디어는 새로운 플랫폼에 최적화된 킬러콘텐츠를 제작, 기획, 유통하고 있습니다.",
+      "map_display_status": "VISIBLE",
+      "lat": 37.5590813,
+      "lng": 126.841834,
+      "jobs": {
+        "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T06:55:19.979Z"
+        "lastChecked": "2026-06-11T07:12:30.589Z"
       }
     }
   ],
-  "lastUpdated": "2026-06-11T06:56:32.686Z"
+  "lastUpdated": "2026-06-11T07:12:34.071Z"
 }
