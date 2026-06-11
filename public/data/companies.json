@@ -33,7 +33,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:11:31.019Z"
+        "lastChecked": "2026-06-11T08:29:07.790Z"
       }
     },
     {
@@ -70,7 +70,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:11:37.405Z"
+        "lastChecked": "2026-06-11T08:29:14.739Z"
       }
     },
     {
@@ -110,10 +110,10 @@
       "lat": 37.5642412,
       "lng": 126.8233268,
       "jobs": {
-        "saramin": true,
+        "saramin": false,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:11:40.999Z"
+        "lastChecked": "2026-06-11T08:29:21.365Z"
       }
     },
     {
@@ -157,7 +157,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:11:44.204Z"
+        "lastChecked": "2026-06-11T08:29:23.650Z"
       }
     },
     {
@@ -189,7 +189,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:11:47.798Z"
+        "lastChecked": "2026-06-11T08:29:27.833Z"
       }
     },
     {
@@ -223,7 +223,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:11:51.003Z"
+        "lastChecked": "2026-06-11T08:29:31.615Z"
       }
     },
     {
@@ -264,7 +264,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:11:54.507Z"
+        "lastChecked": "2026-06-11T08:29:35.068Z"
       }
     },
     {
@@ -305,7 +305,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:11:58.114Z"
+        "lastChecked": "2026-06-11T08:29:38.940Z"
       }
     },
     {
@@ -341,7 +341,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:12:01.263Z"
+        "lastChecked": "2026-06-11T08:29:42.224Z"
       }
     },
     {
@@ -376,7 +376,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:12:04.706Z"
+        "lastChecked": "2026-06-11T08:29:45.552Z"
       }
     },
     {
@@ -411,7 +411,7 @@
         "saramin": false,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:12:07.998Z"
+        "lastChecked": "2026-06-11T08:29:48.758Z"
       }
     },
     {
@@ -449,7 +449,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:12:11.529Z"
+        "lastChecked": "2026-06-11T08:29:52.018Z"
       }
     },
     {
@@ -492,7 +492,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:12:15.031Z"
+        "lastChecked": "2026-06-11T08:29:55.560Z"
       }
     },
     {
@@ -532,7 +532,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T07:12:18.312Z"
+        "lastChecked": "2026-06-11T08:29:58.641Z"
       }
     },
     {
@@ -570,7 +570,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:12:22.531Z"
+        "lastChecked": "2026-06-11T08:30:01.835Z"
       }
     },
     {
@@ -588,7 +588,7 @@
       ],
       "governmentCertifications": [],
       "awardAchievements": [],
-      "benefits": "1.경조휴가,반차,육아휴직,남성출산휴가\n2.직무능력향상교육,자격증취득지원\n3.우수사원포상,퇴직연금,명절선물,각종 수당,경조사 지원\n4.구내식당,주차장제공,휴게실/수면실,회사전용사옥\n5. 장애인 화장실,점심식사제공,가족돌봄휴가",
+      "benefits": "1.경조휴가,반차,육아휴직,남성출산휴가\n2.직무능력향상교육,자격증취득지원\n3.우수사원포상,퇴직연금,명절선물,각종수당지원\n4.구내식당,휴게실/수면실,회사전용사옥\n5. 장애인 화장실,점심식사제공,가족돌봄휴가",
       "workEnvironment": [],
       "images": [
         "킴블스사옥.png",
@@ -604,7 +604,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-11T07:12:27.061Z"
+        "lastChecked": "2026-06-11T08:30:06.085Z"
       }
     },
     {
@@ -637,9 +637,85 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T07:12:30.589Z"
+        "lastChecked": "2026-06-11T08:30:09.352Z"
+      }
+    },
+    {
+      "id": "1100020",
+      "name": "(주)영공조명",
+      "region": "영등포구",
+      "address": "서울특별시 영등포구 양평로146",
+      "logo": "로고.jpg",
+      "industry": "제조",
+      "industryDetail": "조명기구 설계,제조 전문기업",
+      "employees": 28,
+      "certifications": [
+        "지역우수"
+      ],
+      "governmentCertifications": [
+        "특허청 인증",
+        "ISO 9001 품질경영체제인증",
+        "고효율에너지기자재인증",
+        "고용노동부 강소기업 인증",
+        "조달청 해외조달시장진출 유망기업 지정"
+      ],
+      "awardAchievements": [],
+      "benefits": "1. 연차,월차,반차,경조사휴가\n2. 장기근속포상\n3. 점심제공,카페테리아,명절선물,생일선물\n4. 자유복장",
+      "workEnvironment": [],
+      "images": [
+        "영공조명사옥.jpg",
+        "영공조명사옥2.jpg",
+        "영공조명사옥3.jpg"
+      ],
+      "website": "https://www.youngkong.com/",
+      "description": "1984년 설립된 영공조명은 인테리어 조명에서 경관 조명으로\n사업을 확장했습니다.수많은 특허와 독자적인 기술력을 \n바탕으로 독일 전시회에 연속 참가하며,글로벌 시장에서 \n인정받는 세계적인 경관조명 전문 기업으로 성장했습니다.",
+      "map_display_status": "VISIBLE",
+      "lat": 37.5391234,
+      "lng": 126.8919793,
+      "jobs": {
+        "saramin": true,
+        "jobkorea": true,
+        "work24": false,
+        "lastChecked": "2026-06-11T08:30:12.683Z"
+      }
+    },
+    {
+      "id": "1100021",
+      "name": "(주)이액티브",
+      "region": "영등포구",
+      "address": "서울특별시 ㅇ영등포구 양평로 157",
+      "logo": "logo.png",
+      "industry": "IT/SW",
+      "industryDetail": "시스템운영 연계,소프트웨어 전문",
+      "employees": 68,
+      "certifications": [
+        "청년도약"
+      ],
+      "governmentCertifications": [
+        "경영혁신형 중소기업(Main-Biz)선정",
+        "기술혁신형 중소기업(Inno-Biz)선정",
+        "청년친화강소기업"
+      ],
+      "awardAchievements": [
+        "대한민국가치경영 대상 수상(한국일보)"
+      ],
+      "benefits": "1. 퇴직연금,인센티브제,장기근속자 포상\n2. 연차,여름휴가,경조사지원\n3. 건강검진,의료비지원\n4. 카페테리아,노트북지급\n5. 워크샵,학자금,동호회,교육비,자격증취득 지원\n6. 점심식사,간식비지원",
+      "workEnvironment": [],
+      "images": [
+        "이액티브 등록사진.png"
+      ],
+      "website": "http://eactive.co.kr/sub3_1_1.php",
+      "description": "(주)이액티브는 연계 솔루션, 데이터 관리 소프트웨어\n및 오픈소스 소프트웨어를 중심으로,\n급변하는 경영 환경 속에서 고객이 필요로 하는 \n솔루션을 최상의 기술력으로 개발 및 지원하는 \n소프트웨어 전문 회사입니다.",
+      "map_display_status": "VISIBLE",
+      "lat": 37.5391902,
+      "lng": 126.890327,
+      "jobs": {
+        "saramin": true,
+        "jobkorea": true,
+        "work24": false,
+        "lastChecked": "2026-06-11T08:30:16.152Z"
       }
     }
   ],
-  "lastUpdated": "2026-06-11T07:12:34.071Z"
+  "lastUpdated": "2026-06-11T08:30:19.727Z"
 }
