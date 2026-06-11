@@ -33,7 +33,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:16:18.418Z"
+        "lastChecked": "2026-06-11T04:34:33.410Z"
       }
     },
     {
@@ -70,7 +70,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:16:31.676Z"
+        "lastChecked": "2026-06-11T04:34:43.662Z"
       }
     },
     {
@@ -113,7 +113,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:16:40.934Z"
+        "lastChecked": "2026-06-11T04:34:52.512Z"
       }
     },
     {
@@ -157,7 +157,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:16:49.946Z"
+        "lastChecked": "2026-06-11T04:35:02.191Z"
       }
     },
     {
@@ -186,10 +186,10 @@
       "lat": 37.5249386,
       "lng": 126.894037,
       "jobs": {
-        "saramin": false,
+        "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:16:59.131Z"
+        "lastChecked": "2026-06-11T04:35:12.203Z"
       }
     },
     {
@@ -223,7 +223,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:17:11.070Z"
+        "lastChecked": "2026-06-11T04:35:21.413Z"
       }
     },
     {
@@ -264,7 +264,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:17:20.166Z"
+        "lastChecked": "2026-06-11T04:35:31.428Z"
       }
     },
     {
@@ -305,7 +305,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:17:29.545Z"
+        "lastChecked": "2026-06-11T04:35:40.989Z"
       }
     },
     {
@@ -341,7 +341,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:17:38.515Z"
+        "lastChecked": "2026-06-11T04:35:50.879Z"
       }
     },
     {
@@ -376,7 +376,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:17:47.822Z"
+        "lastChecked": "2026-06-11T04:35:59.913Z"
       }
     },
     {
@@ -411,7 +411,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:17:56.753Z"
+        "lastChecked": "2026-06-11T04:36:09.310Z"
       }
     },
     {
@@ -446,10 +446,10 @@
       "lat": 37.5187168,
       "lng": 126.9035606,
       "jobs": {
-        "saramin": false,
+        "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:18:06.313Z"
+        "lastChecked": "2026-06-11T04:36:18.701Z"
       }
     },
     {
@@ -492,7 +492,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:18:18.219Z"
+        "lastChecked": "2026-06-11T04:36:28.408Z"
       }
     },
     {
@@ -532,7 +532,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:18:27.062Z"
+        "lastChecked": "2026-06-11T04:36:38.194Z"
       }
     },
     {
@@ -561,18 +561,18 @@
         "(주)그룹원사진2.jpg",
         "(주)그룹원사진3.jpg"
       ],
-      "website": "http://www.groupone.co.kr",
+      "website": "http://groupone.co.kr/sub/sub0101.php",
       "description": "(주)그룹원은 원자력발전소 및 시설물 안전진단과 구조설계를 전문으로 하는 기술중심 기업입니다. 성별과 나이에 차별 없는 성과 중심의 수평적 문화를 지향하며, 청년 인재와 함께 안전한 사회를 만들어갑니다.",
       "map_display_status": "VISIBLE",
       "lat": 37.5589241,
       "lng": 126.8619549,
       "jobs": {
-        "saramin": false,
+        "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T04:18:36.459Z"
+        "lastChecked": "2026-06-11T04:36:48.082Z"
       }
     }
   ],
-  "lastUpdated": "2026-06-11T04:18:48.730Z"
+  "lastUpdated": "2026-06-11T04:36:58.275Z"
 }
