@@ -33,7 +33,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:15:14.019Z"
+        "lastChecked": "2026-06-11T04:16:18.418Z"
       }
     },
     {
@@ -70,7 +70,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:15:26.870Z"
+        "lastChecked": "2026-06-11T04:16:31.676Z"
       }
     },
     {
@@ -113,7 +113,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:15:36.443Z"
+        "lastChecked": "2026-06-11T04:16:40.934Z"
       }
     },
     {
@@ -157,7 +157,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:15:45.894Z"
+        "lastChecked": "2026-06-11T04:16:49.946Z"
       }
     },
     {
@@ -186,10 +186,10 @@
       "lat": 37.5249386,
       "lng": 126.894037,
       "jobs": {
-        "saramin": true,
+        "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:15:55.775Z"
+        "lastChecked": "2026-06-11T04:16:59.131Z"
       }
     },
     {
@@ -223,7 +223,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:16:05.795Z"
+        "lastChecked": "2026-06-11T04:17:11.070Z"
       }
     },
     {
@@ -264,7 +264,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:16:15.872Z"
+        "lastChecked": "2026-06-11T04:17:20.166Z"
       }
     },
     {
@@ -305,7 +305,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:16:26.094Z"
+        "lastChecked": "2026-06-11T04:17:29.545Z"
       }
     },
     {
@@ -341,7 +341,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:16:35.092Z"
+        "lastChecked": "2026-06-11T04:17:38.515Z"
       }
     },
     {
@@ -376,7 +376,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:16:44.391Z"
+        "lastChecked": "2026-06-11T04:17:47.822Z"
       }
     },
     {
@@ -411,7 +411,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:16:54.247Z"
+        "lastChecked": "2026-06-11T04:17:56.753Z"
       }
     },
     {
@@ -446,10 +446,10 @@
       "lat": 37.5187168,
       "lng": 126.9035606,
       "jobs": {
-        "saramin": true,
+        "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:17:03.936Z"
+        "lastChecked": "2026-06-11T04:18:06.313Z"
       }
     },
     {
@@ -492,7 +492,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:17:13.102Z"
+        "lastChecked": "2026-06-11T04:18:18.219Z"
       }
     },
     {
@@ -532,9 +532,47 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-04T14:17:22.188Z"
+        "lastChecked": "2026-06-11T04:18:27.062Z"
+      }
+    },
+    {
+      "id": "1100017",
+      "name": "(주)그룹원",
+      "region": "강서구",
+      "address": "서울특별시 강서구 양천로 551-24",
+      "logo": "(주)그룹원로고.jpg",
+      "industry": "건설, 서비스",
+      "industryDetail": "엔지니어링, 안전진단 (원전 및 사회 전반 시설의 구조안전진단, 구조 설계/검토, 내진성능평가 등)",
+      "employees": 0,
+      "certifications": [
+        "지역우수"
+      ],
+      "governmentCertifications": [
+        "여성가족부 가족친화인증기업",
+        "고용노동부 일•생활균형 캠페인 참여기업",
+        "고용노동부 청년일자리강소기업",
+        "교육부 산학협력우수기업"
+      ],
+      "awardAchievements": [],
+      "benefits": "1. 비용 지원\n ● 구글 유료 AI 구독비 지원\n ● 휴가비 지원 : 연간 15만원(소노호텔&리조트 외 선택)\n ● 직급별 내일채움공제 지원(월 30만원 지원)\n ● 직급별 인센티브 제도 시행\n2. 워크인라이프 밸런스\n ● 매주 금요일 1시간(5시) 조기퇴근\n ● 전 직원 해외 워크숍 :3년마다 실시(100% 회사 지원)\n3. 건강 및 복지\n ● 건강증진 바우처(헬스, 수영 등) 제공:연간 60만원\n ● 건강검진 제공 : 3년마다 헬스체크업(1인당 100만원 상당)\n ● 타지역 거주 직원 숙소 제공\n4. 출산 및 자녀 양육 지원\n ● 대학생 자녀 1학년 등록금 전액 지원\n ● 출산축하금 50만원 및 자녀 돌반지 1돈 지급 외",
+      "workEnvironment": [],
+      "images": [
+        "(주)그룹원사진1.jpg",
+        "(주)그룹원사진2.jpg",
+        "(주)그룹원사진3.jpg"
+      ],
+      "website": "http://www.groupone.co.kr",
+      "description": "(주)그룹원은 원자력발전소 및 시설물 안전진단과 구조설계를 전문으로 하는 기술중심 기업입니다. 성별과 나이에 차별 없는 성과 중심의 수평적 문화를 지향하며, 청년 인재와 함께 안전한 사회를 만들어갑니다.",
+      "map_display_status": "VISIBLE",
+      "lat": 37.5589241,
+      "lng": 126.8619549,
+      "jobs": {
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-11T04:18:36.459Z"
       }
     }
   ],
-  "lastUpdated": "2026-06-04T14:17:31.856Z"
+  "lastUpdated": "2026-06-11T04:18:48.730Z"
 }
