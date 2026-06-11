@@ -31,9 +31,9 @@
       "lng": 126.8913475,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:07.790Z"
+        "lastChecked": "2026-06-11T09:16:34.880Z"
       }
     },
     {
@@ -68,9 +68,9 @@
       "lng": 126.9262455,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:14.739Z"
+        "lastChecked": "2026-06-11T09:16:46.064Z"
       }
     },
     {
@@ -110,10 +110,10 @@
       "lat": 37.5642412,
       "lng": 126.8233268,
       "jobs": {
-        "saramin": false,
-        "jobkorea": true,
+        "saramin": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:21.365Z"
+        "lastChecked": "2026-06-11T09:16:56.281Z"
       }
     },
     {
@@ -155,9 +155,9 @@
       "lng": 126.928296,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:23.650Z"
+        "lastChecked": "2026-06-11T09:17:06.513Z"
       }
     },
     {
@@ -187,9 +187,9 @@
       "lng": 126.894037,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:27.833Z"
+        "lastChecked": "2026-06-11T09:17:16.762Z"
       }
     },
     {
@@ -221,9 +221,9 @@
       "lng": 126.8200471,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:31.615Z"
+        "lastChecked": "2026-06-11T09:17:26.062Z"
       }
     },
     {
@@ -262,9 +262,9 @@
       "lng": 126.8611499,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:35.068Z"
+        "lastChecked": "2026-06-11T09:17:35.923Z"
       }
     },
     {
@@ -303,9 +303,9 @@
       "lng": 126.890132,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:38.940Z"
+        "lastChecked": "2026-06-11T09:17:45.625Z"
       }
     },
     {
@@ -339,9 +339,9 @@
       "lng": 126.9050405,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:42.224Z"
+        "lastChecked": "2026-06-11T09:17:55.095Z"
       }
     },
     {
@@ -374,9 +374,9 @@
       "lng": 126.8917848,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:45.552Z"
+        "lastChecked": "2026-06-11T09:18:04.099Z"
       }
     },
     {
@@ -409,9 +409,9 @@
       "lng": 126.9021242,
       "jobs": {
         "saramin": false,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:48.758Z"
+        "lastChecked": "2026-06-11T09:18:14.036Z"
       }
     },
     {
@@ -447,9 +447,9 @@
       "lng": 126.9035606,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:52.018Z"
+        "lastChecked": "2026-06-11T09:18:23.717Z"
       }
     },
     {
@@ -490,9 +490,9 @@
       "lng": 126.8989475,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:55.560Z"
+        "lastChecked": "2026-06-11T09:18:33.649Z"
       }
     },
     {
@@ -532,7 +532,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:29:58.641Z"
+        "lastChecked": "2026-06-11T09:18:43.644Z"
       }
     },
     {
@@ -568,9 +568,9 @@
       "lng": 126.8619549,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:30:01.835Z"
+        "lastChecked": "2026-06-11T09:18:52.857Z"
       }
     },
     {
@@ -602,9 +602,9 @@
       "lng": 126.8575995,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:30:06.085Z"
+        "lastChecked": "2026-06-11T09:19:02.699Z"
       }
     },
     {
@@ -637,7 +637,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:30:09.352Z"
+        "lastChecked": "2026-06-11T09:19:11.946Z"
       }
     },
     {
@@ -674,16 +674,16 @@
       "lng": 126.8919793,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:30:12.683Z"
+        "lastChecked": "2026-06-11T09:19:22.099Z"
       }
     },
     {
       "id": "1100021",
       "name": "(주)이액티브",
       "region": "영등포구",
-      "address": "서울특별시 ㅇ영등포구 양평로 157",
+      "address": "서울특별시 영등포구 양평로 157",
       "logo": "logo.png",
       "industry": "IT/SW",
       "industryDetail": "시스템운영 연계,소프트웨어 전문",
@@ -705,17 +705,64 @@
         "이액티브 등록사진.png"
       ],
       "website": "http://eactive.co.kr/sub3_1_1.php",
-      "description": "(주)이액티브는 연계 솔루션, 데이터 관리\n소프트웨어및 오픈소스 소프트웨어를 중심으로,\n급변하는 경영 환경 속에서 고객이 필요로 하는 \n솔루션을 최상의 기술력으로 개발 및 지원하는 \n소프트웨어 전문 회사입니다.",
+      "description": "(주)이액티브는 연계 솔루션, 데이터 관리\n소프트웨어및 오픈소스 소프트웨어를 \n중심으로,급변하는 경영 환경 속에서 고객이\n필요로 하는 솔루션을 최상의 기술력으로 \n개발 및 지원하는 소프트웨어 전문 회사입니다.",
       "map_display_status": "VISIBLE",
       "lat": 37.5391902,
       "lng": 126.890327,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-11T08:30:16.152Z"
+        "lastChecked": "2026-06-11T09:19:32.210Z"
+      }
+    },
+    {
+      "id": "1100022",
+      "name": "(주)TS트릴리온",
+      "region": "영등포구",
+      "address": "서울특별시 영등포구 양평로 96",
+      "logo": "TS 로그1.JPG",
+      "industry": "제조",
+      "industryDetail": "기능성화장품(탈모 증상 완화 기능성 샴푸 중심) 제조 및 판매",
+      "employees": 42,
+      "certifications": [
+        "지역우수",
+        "청년도약"
+      ],
+      "governmentCertifications": [
+        "ISO9001품질경영시스템 인증",
+        "ISO14001환경경영시스템 인증",
+        "ISO22716국제우수화장품제조 및 품질관리기준",
+        "우수화장품제조 및 품질관리 기준(식약처)",
+        "식품안전관리 인증 기준(HACCP)"
+      ],
+      "awardAchievements": [
+        "머니투데이 2023 대한민국 소비자만족지수 1위 (탈모케어 부문/ 5년)",
+        "중앙일보 2023 소비자의 선택 (샴푸 부문/ 7년 연속)",
+        "중앙일보 2023 고객신뢰도 1위 프리미엄 브랜드 (탈모케어 부문/ 3년 연속)",
+        "2023 올해의 K-뷰티 신제품(브랜드스타즈) - TS샴푸(탈모케어 부문)",
+        "2023 대한민국 명품브랜드 대상 (탈모케어 부문/4년 연속)",
+        "2023 소비자선정 최고의 브랜드 대상 (탈모케어 부문/ 8년연속)"
+      ],
+      "benefits": "1. 반차제도, 리프레시 휴가\n2. 패밀리데이 운영\n3. 장기근속 포상\n4. 휴식공간, 헬스시설 운영\n5. 건강검진, 식사제공",
+      "workEnvironment": [],
+      "images": [
+        "TS 로고.JPG",
+        "TS2.JPG",
+        "TS 신사옥.JPG"
+      ],
+      "website": "https://tstrillion.co.kr/",
+      "description": "TS는 Trust.신뢰에서 비롯된 브랜드로 고객님들이 신뢰하고 사용하실 수 있는 제품을 만들기 위해 최선을 다하고 있습니다.\n대한민국을 대표하고 선도적 기술로 고객 맞춤 제품을 제공하는 글로벌 기업 TS는 전 과정을 아우르는 탈모 전략과 프로세스는 물론\n샴푸, 염색, 치약 등의 사업을 통해 최상의 서비스를 제공하며 고객과 함께 성장하고 있습니다.\n특히 TS는 최고의 전문가와 최첨단 IT 시스템 구축을 통한 경쟁력 확보로 매년 꾸준한 성장세를 이어가고 있습니다.",
+      "map_display_status": "VISIBLE",
+      "lat": 37.536724,
+      "lng": 126.8967848,
+      "jobs": {
+        "saramin": true,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-11T09:19:42.212Z"
       }
     }
   ],
-  "lastUpdated": "2026-06-11T08:39:42.192Z"
+  "lastUpdated": "2026-06-11T09:19:51.363Z"
 }
