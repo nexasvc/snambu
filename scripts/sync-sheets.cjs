@@ -97,25 +97,35 @@ async function checkJobPortals(name) {
     
     if (jobkoreaRes) {
       const data = jobkoreaRes.data;
-      // 강력한 긍정 신호: 공고 리스트 요소 존재 여부 (클래스 및 데이터 속성 기반)
-      // JOB_POSTING, jobsLength, resultCount 등 현대적 마커 추가
+      
+      // 1. Next.js Hydration 데이터에서 정확한 숫자 추출 (가장 정확함)
+      // 백슬래시와 공백 등을 고려한 유연한 정규식 사용
+      const jobsLengthMatch = data.match(/jobsLength\\?":\s*(\d+)/);
+      const resultCountMatch = data.match(/resultCount\\?":\s*(\d+)/);
+      const jobsCount = jobsLengthMatch ? parseInt(jobsLengthMatch[1]) : (resultCountMatch ? parseInt(resultCountMatch[1]) : 0);
+
+      // 2. 강력한 긍정 신호: 공고 리스트 요소 존재 여부
       const hasItems = data.includes('list-post') || data.includes('post-list') || 
                        data.includes('recruit-info') || data.includes('list-default') ||
-                       data.includes('JOB_POSTING') || data.includes('jobPlatformId') ||
-                       /jobsLength":([1-9]\d*)/.test(data) || /resultCount":([1-9]\d*)/.test(data);
+                       data.includes('JOB_POSTING') || data.includes('jobPlatformId');
                        
-      // 부정 신호: 결과 없음 패턴 (jobsLength:0 포함)
-      const noResultsFound = data.includes('검색결과가 없습니다') || 
-                             data.includes('정확한 검색어인지 확인') || 
-                             data.includes('0건의 검색결과') ||
-                             /jobsLength":0/.test(data);
+      // 3. 부정 신호: 결과 없음 패턴 (공고 탭에 결과가 없는 경우만 해당해야 함)
+      // 단순히 '0건의 검색결과'가 포함되어 있다고 해서 마감으로 처리하면 안 됨 (다른 탭 결과일 수 있음)
+      const isZeroJobs = jobsCount === 0 && (data.includes('검색결과가 없습니다') || data.includes('0건의 검색결과'));
       
-      results.jobkorea = hasItems && !noResultsFound;
-      
-      // 특별 케이스 구제: 사명이 데이터에 포함되어 있고 어떤 형태로든 아이템이나 리스트가 보일 때 (결과 없음이 아닐 때만)
-      if (!results.jobkorea && !noResultsFound && data.includes(cleanName) && 
-          (data.includes('item') || data.includes('list') || data.includes('post'))) {
+      if (jobsCount > 0) {
         results.jobkorea = true;
+      } else {
+        results.jobkorea = hasItems && !isZeroJobs;
+      }
+      
+      // 4. 특별 케이스 구제: 사명이 데이터에 포함되어 있고 어떤 형태로든 아이템이나 리스트가 보일 때
+      if (!results.jobkorea && jobsCount === 0 && data.includes(cleanName) && 
+          (data.includes('item') || data.includes('list') || data.includes('post'))) {
+        // 단, 정말로 결과가 0이라는 명시적인 메시지가 없을 때만
+        if (!data.includes('검색결과가 없습니다') && !/jobsLength":0/.test(data)) {
+          results.jobkorea = true;
+        }
       }
     }
 
