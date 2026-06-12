@@ -63,34 +63,79 @@ async function checkJobPortals(name) {
     lastChecked: new Date().toISOString()
   };
 
+  // 검색어 정제: 사명에 포함된 (주), 주식회사, (유) 등 제거하여 검색 정확도 향상
+  const cleanName = name.replace(/\(주\)|주식회사|\(유\)|유한회사|\(사\)|사단법인/g, '').trim();
+  const searchName = encodeURIComponent(cleanName || name);
+
   try {
-    // 사람인
-    const saraminRes = await axios.get(`https://www.saramin.co.kr/zf_user/search/recruit?searchword=${encodeURIComponent(name)}`, {
+    // 1. 사람인
+    const saraminRes = await axios.get(`https://www.saramin.co.kr/zf_user/search/recruit?searchword=${searchName}`, {
       headers: { 'User-Agent': USER_AGENT },
-      timeout: 5000
+      timeout: 10000
     }).catch(() => null);
+    
     if (saraminRes) {
-      console.log(`사람인 검색 결과:${name} : ${saraminRes.data.length} characters`); // 디버깅용 로그
-      results.saramin = !saraminRes.data.includes('총 0건의 검색결과'); //총 0건의 검색결과, //검색결과가 없습니다.
+      const data = saraminRes.data;
+      // 강력한 긍정 신호: 공고 아이템 클래스 또는 리스트 바디 존재 여부
+      const hasItems = data.includes('item_recruit') || data.includes('list_body') || data.includes('recruit_list');
+      // 부정 신호: 결과 없음 패턴
+      const hasNoResults = data.includes('검색결과가 없습니다') || data.includes('총 0건') || data.includes('조건에 맞는 결과가 없습니다');
+      
+      results.saramin = hasItems && !hasNoResults;
+      
+      // ANS개발과 같이 사명이 명확히 포함된 경우 추가 구제
+      if (!results.saramin && data.includes(cleanName) && data.includes('item')) {
+        results.saramin = true;
+      }
     }
 
-    // 잡코리아
-    const jobkoreaRes = await axios.get(`https://www.jobkorea.co.kr/Search/?stext=${encodeURIComponent(name)}&tabType=recruit`, {
+    // 2. 잡코리아
+    const jobkoreaRes = await axios.get(`https://www.jobkorea.co.kr/Search/?stext=${searchName}&tabType=recruit`, {
       headers: { 'User-Agent': USER_AGENT },
-      timeout: 5000
+      timeout: 10000
     }).catch(() => null);
+    
     if (jobkoreaRes) {
-      results.jobkorea = !jobkoreaRes.data.includes('검색결과가 없습니다'); //검색결과가 없습니다 //보다 일반적인 검색어로 다시 검색해 보세요.
+      const data = jobkoreaRes.data;
+      // 강력한 긍정 신호: 공고 리스트 요소 존재 여부
+      const hasItems = data.includes('list-post') || data.includes('post-list') || data.includes('recruit-info') || data.includes('list-default');
+      // 부정 신호: 결과 없음 패턴
+      const noResultsFound = data.includes('검색결과가 없습니다') || data.includes('정확한 검색어인지 확인') || data.includes('0건의 검색결과');
+      
+      results.jobkorea = hasItems && !noResultsFound;
+      
+      // 특별 케이스 구제
+      if (!results.jobkorea && data.includes(cleanName) && (data.includes('item') || data.includes('list'))) {
+        results.jobkorea = true;
+      }
     }
 
-    // 고용24 (워크24) // 11500:강서구,11470:양천구,11560:영등포구
-    const work24Res = await axios.get(`https://www.work24.go.kr/wk/a/b/1200/retriveDtlEmpSrchList.do?srcKeyword=${encodeURIComponent(name)}&regionParam=11500,11470,11560&region=11500,11470,11560`, {
+    // 3. 고용24 (워크24)
+    // regionParam과 region 모두 사용하여 검색 안정성 확보 (11500:강서, 11470:양천, 11560:영등포)
+    const work24Res = await axios.get(`https://www.work24.go.kr/wk/a/b/1200/retriveDtlEmpSrchList.do?srcKeyword=${searchName}&regionParam=11500,11470,11560&region=11500,11470,11560`, {
       headers: { 'User-Agent': USER_AGENT },
-      timeout: 5000
+      timeout: 10000
     }).catch(() => null);
+    
     if (work24Res) {
-      results.work24 = !work24Res.data.includes('검색 결과가 없습니다.');
+      const data = work24Res.data;
+      // 고용24 고유의 리스트 패턴 및 결과 없음 패턴 정밀화
+      const hasListTable = data.includes('emplym_list') || data.includes('empSrchList') || data.includes('table_list') || data.includes('board_list');
+      const noDataMessage = data.includes('검색 결과가 없습니다') || data.includes('데이터가 존재하지 않습니다') || data.includes('등록된 내역이 없습니다');
+      
+      // 검색된 공고 수가 0인지 확인하는 패턴 (예: <em class="total_cnt">0</em> 또는 '전체 0건')
+      const zeroCountPattern = /total_cnt[^>]*>0<\/em/i.test(data) || /전체\s*<em>0<\/em>\s*건/i.test(data) || /검색결과\s*0\s*건/i.test(data);
+      
+      results.work24 = hasListTable && !noDataMessage && !zeroCountPattern;
+      
+      // "ANS개발"과 같이 사명이 데이터에 직접 나타나고 상세 공고 링크(retriveDtl)가 보인다면 긍정 결과로 구제
+      if (!results.work24 && data.includes(cleanName) && (data.includes('retriveDtl') || data.includes('goDtlEmp'))) {
+        results.work24 = true;
+      }
     }
+
+    console.log(`🔍 Job Check Result for [${name}] (Search: ${cleanName}): Saramin(${results.saramin}), JobKorea(${results.jobkorea}), Work24(${results.work24})`);
+    
   } catch (error) {
     console.warn(`⚠️ Failed to check jobs for ${name}: ${error.message}`);
   }

@@ -31,9 +31,9 @@
       "lng": 126.8913475,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:44:37.458Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:54:31.630Z"
       }
     },
     {
@@ -68,9 +68,9 @@
       "lng": 126.9262455,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:44:47.026Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:54:33.889Z"
       }
     },
     {
@@ -111,9 +111,9 @@
       "lng": 126.8233268,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:44:55.758Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:54:37.009Z"
       }
     },
     {
@@ -155,9 +155,9 @@
       "lng": 126.928296,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:45:04.671Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:54:39.089Z"
       }
     },
     {
@@ -187,9 +187,9 @@
       "lng": 126.894037,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:45:13.434Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:54:41.452Z"
       }
     },
     {
@@ -221,9 +221,9 @@
       "lng": 126.8200471,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:45:22.264Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:54:43.587Z"
       }
     },
     {
@@ -262,9 +262,9 @@
       "lng": 126.8611499,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:45:31.551Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:54:45.703Z"
       }
     },
     {
@@ -303,9 +303,9 @@
       "lng": 126.890132,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:45:41.051Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:54:48.147Z"
       }
     },
     {
@@ -339,9 +339,9 @@
       "lng": 126.9050405,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:45:50.201Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:54:51.247Z"
       }
     },
     {
@@ -374,9 +374,9 @@
       "lng": 126.8917848,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:45:59.070Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:54:53.557Z"
       }
     },
     {
@@ -408,10 +408,10 @@
       "lat": 37.5225142,
       "lng": 126.9021242,
       "jobs": {
-        "saramin": false,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:46:08.219Z"
+        "saramin": true,
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:54:55.925Z"
       }
     },
     {
@@ -447,9 +447,9 @@
       "lng": 126.9035606,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:46:17.387Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:54:58.076Z"
       }
     },
     {
@@ -490,9 +490,9 @@
       "lng": 126.8989475,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:46:26.252Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:55:00.438Z"
       }
     },
     {
@@ -530,9 +530,9 @@
       "lng": 126.9035606,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:46:34.556Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:55:02.565Z"
       }
     },
     {
@@ -568,9 +568,9 @@
       "lng": 126.8619549,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:46:42.731Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:55:04.700Z"
       }
     },
     {
@@ -602,9 +602,9 @@
       "lng": 126.8575995,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:46:52.061Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:55:07.113Z"
       }
     },
     {
@@ -635,9 +635,9 @@
       "lng": 126.841834,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:47:00.742Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:55:09.204Z"
       }
     },
     {
@@ -674,9 +674,9 @@
       "lng": 126.8919793,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:47:09.702Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:55:11.302Z"
       }
     },
     {
@@ -711,9 +711,9 @@
       "lng": 126.890327,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:47:18.130Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:55:13.342Z"
       }
     },
     {
@@ -758,9 +758,9 @@
       "lng": 126.8967848,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:47:27.326Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:55:15.645Z"
       }
     },
     {
@@ -791,10 +791,10 @@
       "lat": 37.536165,
       "lng": 126.8918554,
       "jobs": {
-        "saramin": false,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:47:36.140Z"
+        "saramin": true,
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:55:17.792Z"
       }
     },
     {
@@ -830,9 +830,9 @@
       "lng": 126.9014962,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:47:44.743Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:55:20.067Z"
       }
     },
     {
@@ -871,9 +871,9 @@
       "lng": 126.9041497,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:47:53.348Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:55:22.220Z"
       }
     },
     {
@@ -911,10 +911,10 @@
       "lat": 37.5202291,
       "lng": 126.890132,
       "jobs": {
-        "saramin": false,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:48:02.370Z"
+        "saramin": true,
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:55:24.338Z"
       }
     },
     {
@@ -952,11 +952,11 @@
       "lng": 126.8989475,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-06-11T11:48:11.441Z"
+        "jobkorea": true,
+        "work24": true,
+        "lastChecked": "2026-06-12T04:55:26.542Z"
       }
     }
   ],
-  "lastUpdated": "2026-06-11T11:58:16.759Z"
+  "lastUpdated": "2026-06-12T04:55:28.899Z"
 }
