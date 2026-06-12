@@ -97,15 +97,24 @@ async function checkJobPortals(name) {
     
     if (jobkoreaRes) {
       const data = jobkoreaRes.data;
-      // 강력한 긍정 신호: 공고 리스트 요소 존재 여부
-      const hasItems = data.includes('list-post') || data.includes('post-list') || data.includes('recruit-info') || data.includes('list-default');
-      // 부정 신호: 결과 없음 패턴
-      const noResultsFound = data.includes('검색결과가 없습니다') || data.includes('정확한 검색어인지 확인') || data.includes('0건의 검색결과');
+      // 강력한 긍정 신호: 공고 리스트 요소 존재 여부 (클래스 및 데이터 속성 기반)
+      // JOB_POSTING, jobsLength, resultCount 등 현대적 마커 추가
+      const hasItems = data.includes('list-post') || data.includes('post-list') || 
+                       data.includes('recruit-info') || data.includes('list-default') ||
+                       data.includes('JOB_POSTING') || data.includes('jobPlatformId') ||
+                       /jobsLength":([1-9]\d*)/.test(data) || /resultCount":([1-9]\d*)/.test(data);
+                       
+      // 부정 신호: 결과 없음 패턴 (jobsLength:0 포함)
+      const noResultsFound = data.includes('검색결과가 없습니다') || 
+                             data.includes('정확한 검색어인지 확인') || 
+                             data.includes('0건의 검색결과') ||
+                             /jobsLength":0/.test(data);
       
       results.jobkorea = hasItems && !noResultsFound;
       
-      // 특별 케이스 구제
-      if (!results.jobkorea && data.includes(cleanName) && (data.includes('item') || data.includes('list'))) {
+      // 특별 케이스 구제: 사명이 데이터에 포함되어 있고 어떤 형태로든 아이템이나 리스트가 보일 때 (결과 없음이 아닐 때만)
+      if (!results.jobkorea && !noResultsFound && data.includes(cleanName) && 
+          (data.includes('item') || data.includes('list') || data.includes('post'))) {
         results.jobkorea = true;
       }
     }
