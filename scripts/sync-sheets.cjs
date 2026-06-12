@@ -98,33 +98,43 @@ async function checkJobPortals(name) {
     if (jobkoreaRes) {
       const data = jobkoreaRes.data;
       
-      // 1. Next.js Hydration 데이터에서 정확한 숫자 추출 (가장 정확함)
-      // 백슬래시와 공백 등을 고려한 유연한 정규식 사용
+      // 1. Next.js Hydration 데이터에서 정확한 숫자 추출
       const jobsLengthMatch = data.match(/jobsLength\\?":\s*(\d+)/);
       const resultCountMatch = data.match(/resultCount\\?":\s*(\d+)/);
       const jobsCount = jobsLengthMatch ? parseInt(jobsLengthMatch[1]) : (resultCountMatch ? parseInt(resultCountMatch[1]) : 0);
 
-      // 2. 강력한 긍정 신호: 공고 리스트 요소 존재 여부
+      // 2. 강력한 긍정 신호
       const hasItems = data.includes('list-post') || data.includes('post-list') || 
                        data.includes('recruit-info') || data.includes('list-default') ||
-                       data.includes('JOB_POSTING') || data.includes('jobPlatformId');
+                       data.includes('JOB_POSTING') || data.includes('jobPlatformId') ||
+                       data.includes('dev.jobkorea.co.kr') || data.includes('posting-item');
                        
-      // 3. 부정 신호: 결과 없음 패턴 (공고 탭에 결과가 없는 경우만 해당해야 함)
-      // 단순히 '0건의 검색결과'가 포함되어 있다고 해서 마감으로 처리하면 안 됨 (다른 탭 결과일 수 있음)
+      // 3. 부정 신호
       const isZeroJobs = jobsCount === 0 && (data.includes('검색결과가 없습니다') || data.includes('0건의 검색결과'));
       
-      if (jobsCount > 0) {
+      // 4. 추가 긍정 신호: HTML 내의 공고 수 텍스트 (총 X건의 검색결과)
+      const textCountMatch = data.match(/총\s*([\d,]+)건의\s*검색결과/);
+      const textCount = textCountMatch ? parseInt(textCountMatch[1].replace(/,/g, '')) : 0;
+
+      if (jobsCount > 0 || textCount > 0) {
         results.jobkorea = true;
       } else {
         results.jobkorea = hasItems && !isZeroJobs;
       }
       
-      // 4. 특별 케이스 구제: 사명이 데이터에 포함되어 있고 어떤 형태로든 아이템이나 리스트가 보일 때
-      if (!results.jobkorea && jobsCount === 0 && data.includes(cleanName) && 
-          (data.includes('item') || data.includes('list') || data.includes('post'))) {
-        // 단, 정말로 결과가 0이라는 명시적인 메시지가 없을 때만
-        if (!data.includes('검색결과가 없습니다') && !/jobsLength":0/.test(data)) {
+      // 5. 특별 케이스 구제
+      if (!results.jobkorea && data.includes(cleanName) && 
+          (data.includes('item') || data.includes('list') || data.includes('post') || data.includes('recruit'))) {
+        if (!data.includes('검색결과가 없습니다') && !/jobsLength\\?":0/.test(data)) {
           results.jobkorea = true;
+        }
+      }
+
+      // 디버깅: GitHub Actions 환경에서 원인 파악을 위한 로그 (로직이 false일 때만 출력)
+      if (!results.jobkorea && (name.includes('이사대학') || name.includes('피앤피시큐어'))) {
+        console.log(`⚠️ [Debug] JobKorea false for ${name}: len=${data.length}, jobsCount=${jobsCount}, textCount=${textCount}, hasItems=${hasItems}, isZeroJobs=${isZeroJobs}`);
+        if (data.includes('Login') || data.includes('Security') || data.includes('Captcha')) {
+          console.log(`🚨 Possible bot detection or redirect detected in the response.`);
         }
       }
     }
