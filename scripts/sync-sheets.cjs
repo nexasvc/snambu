@@ -91,9 +91,20 @@ async function checkJobPortals(name) {
 
     // 2. 잡코리아
     const jobkoreaRes = await axios.get(`https://www.jobkorea.co.kr/Search/?stext=${searchName}&tabType=recruit`, {
-      headers: { 'User-Agent': USER_AGENT },
-      timeout: 10000
-    }).catch(() => null);
+      headers: { 
+        'User-Agent': USER_AGENT,
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+        'Referer': 'https://www.jobkorea.co.kr/',
+        'Cache-Control': 'no-cache'
+      },
+      timeout: 15000
+    }).catch((err) => {
+      if (name.includes('이사대학')) {
+        console.log(`❌ JobKorea Request Failed for ${name}: ${err.message}`);
+      }
+      return null;
+    });
     
     if (jobkoreaRes) {
       const data = jobkoreaRes.data;
@@ -130,13 +141,15 @@ async function checkJobPortals(name) {
         }
       }
 
-      // 디버깅: GitHub Actions 환경에서 원인 파악을 위한 로그 (로직이 false일 때만 출력)
+      // 디버깅: GitHub Actions 환경에서 원인 파악을 위한 로그
       if (!results.jobkorea && (name.includes('이사대학') || name.includes('피앤피시큐어'))) {
         console.log(`⚠️ [Debug] JobKorea false for ${name}: len=${data.length}, jobsCount=${jobsCount}, textCount=${textCount}, hasItems=${hasItems}, isZeroJobs=${isZeroJobs}`);
         if (data.includes('Login') || data.includes('Security') || data.includes('Captcha')) {
           console.log(`🚨 Possible bot detection or redirect detected in the response.`);
         }
       }
+    } else if (name.includes('이사대학')) {
+        console.log(`⚠️ [Debug] JobKorea Response is NULL for ${name}`);
     }
 
     // 3. 고용24 (워크24)
