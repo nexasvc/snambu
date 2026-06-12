@@ -102,7 +102,10 @@ export function useCompanies() {
         if (!response.ok) throw new Error(`Failed to fetch companies: ${response.status} ${response.statusText}`);
         const data = await response.json();
         if (!data || !data.companies) throw new Error('Invalid data format: companies field missing');
-        setCompanies(data.companies);
+        
+        // 초기 로드 시 랜덤하게 셔플하여 노출 균등화
+        const shuffled = [...data.companies].sort(() => Math.random() - 0.5);
+        setCompanies(shuffled);
         setLastUpdated(data.lastUpdated || null);
       } catch (err) {
         console.error('Error fetching companies:', err);
@@ -150,16 +153,21 @@ export function useCompanies() {
       return matchesRegion && matchesCert && matchesIndustrySelection && matchesHiring;
     });
 
-    // 2. Fuzzy Search
+    // 2. Fuzzy Search or Smart Sorting
     if (searchTerm.trim()) {
       const results = fuse.search(searchTerm);
       const matchedIds = new Set(results.map(r => r.item.id));
       filtered = filtered.filter(c => matchedIds.has(c.id));
       
-      // Sort by Fuse.js score (optional, but good for relevance)
-      // Fuse results are already sorted by score.
       const scoreMap = new Map(results.map(r => [r.item.id, r.score ?? 1]));
       filtered.sort((a, b) => (scoreMap.get(a.id) ?? 1) - (scoreMap.get(b.id) ?? 1));
+    } else {
+      // 검색어가 없을 때: 채용 중인 기업을 최상단으로 (나머지는 셔플된 상태 유지)
+      filtered.sort((a, b) => {
+        const aHiring = a.jobs?.saramin || a.jobs?.jobkorea || a.jobs?.work24 ? 1 : 0;
+        const bHiring = b.jobs?.saramin || b.jobs?.jobkorea || b.jobs?.work24 ? 1 : 0;
+        return bHiring - aHiring;
+      });
     }
 
     return filtered;
