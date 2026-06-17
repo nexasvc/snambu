@@ -52,6 +52,12 @@ export default function CompanyDetail({ company, onClose }: CompanyDetailProps) 
     }
   };
 
+  const handleJobClick = (portal: string) => {
+    if (company) {
+      trackEvent(`Click_Job_Portal_${portal}`, "Conversion", company.name);
+    }
+  };
+
   const handleShare = async () => {
     if (!company) return;
 
@@ -503,6 +509,7 @@ export default function CompanyDetail({ company, onClose }: CompanyDetailProps) 
                     href={`https://www.work24.go.kr/wk/a/b/1200/retriveDtlEmpSrchList.do?srcKeyword=${encodeURIComponent(company.name)}&regionParam=11470,11500,11560&region=11470,11500,11560`}
                     target="_blank" 
                     rel="noopener noreferrer"
+                    onClick={() => handleJobClick('Work24')}
                     className={cn(
                       "flex flex-col items-center justify-center gap-1.5 py-3 rounded-xl border transition-all font-bold text-[10px]",
                       company.jobs?.work24 
@@ -519,6 +526,7 @@ export default function CompanyDetail({ company, onClose }: CompanyDetailProps) 
                     href={`https://www.saramin.co.kr/zf_user/search/recruit?searchword=${encodeURIComponent(company.name)}`}
                     target="_blank" 
                     rel="noopener noreferrer"
+                    onClick={() => handleJobClick('Saramin')}
                     className={cn(
                       "flex flex-col items-center justify-center gap-1.5 py-3 rounded-xl border transition-all font-bold text-[10px]",
                       company.jobs?.saramin 
@@ -535,6 +543,7 @@ export default function CompanyDetail({ company, onClose }: CompanyDetailProps) 
                     href={`https://www.jobkorea.co.kr/Search/?stext=${encodeURIComponent(company.name)}&tabType=recruit`}
                     target="_blank" 
                     rel="noopener noreferrer"
+                    onClick={() => handleJobClick('Jobkorea')}
                     className={cn(
                       "flex flex-col items-center justify-center gap-1.5 py-3 rounded-xl border transition-all font-bold text-[10px]",
                       company.jobs?.jobkorea 
