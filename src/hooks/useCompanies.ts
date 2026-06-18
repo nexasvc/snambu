@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import { Company, Region, Certification } from '../types/company';
 import Fuse from 'fuse.js';
-import { trackEvent } from '../lib/ga4';
+import { trackEvent, trackSearch, trackFilter } from '../lib/ga4';
 
 export function useCompanies() {
   const [companies, setCompanies] = useState<Company[]>([]);
@@ -59,7 +59,7 @@ export function useCompanies() {
     if (searchTerm.trim().length > 1) {
       if (searchTimeoutRef.current) clearTimeout(searchTimeoutRef.current);
       searchTimeoutRef.current = setTimeout(() => {
-        trackEvent('Search', 'Engagement', searchTerm);
+        trackSearch(searchTerm);
       }, 1000);
     }
     return () => {
@@ -70,25 +70,25 @@ export function useCompanies() {
   // Tracking filter changes
   useEffect(() => {
     if (selectedRegions.length > 0) {
-      trackEvent('Filter_Region', 'Engagement', selectedRegions.join(','));
+      trackFilter('region', selectedRegions.join(','));
     }
   }, [selectedRegions]);
 
   useEffect(() => {
     if (selectedCerts.length > 0) {
-      trackEvent('Filter_Cert', 'Engagement', selectedCerts.join(','));
+      trackFilter('cert', selectedCerts.join(','));
     }
   }, [selectedCerts]);
 
   useEffect(() => {
     if (selectedIndustry) {
-      trackEvent('Filter_Industry', 'Engagement', selectedIndustry);
+      trackFilter('industry', selectedIndustry);
     }
   }, [selectedIndustry]);
 
   useEffect(() => {
     if (onlyHiring) {
-      trackEvent('Filter_Hiring', 'Engagement', 'true');
+      trackFilter('hiring', 'true');
     }
   }, [onlyHiring]);
 

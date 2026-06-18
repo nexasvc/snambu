@@ -27,7 +27,7 @@ function App() {
   const [showAbout, setShowAbout] = useState(false);
   
   // GA4 페이지 뷰 추적 활성화
-  usePageTracking(selectedCompany?.id);
+  usePageTracking(companies.length, selectedCompany?.id);
   const [hoveredCompanyId, setHoveredCompanyId] = useState<string | null>(null);
   const [isListOpen, setIsListOpen] = useState(false);
   const [drawerHeight, setDrawerHeight] = useState<'compact' | 'expanded'>('compact');

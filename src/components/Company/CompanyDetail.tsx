@@ -23,7 +23,7 @@ import { Company } from '../../types/company';
 import { cn } from '../../lib/utils';
 import { useState, useEffect } from 'react';
 import CompanyLogo from './CompanyLogo';
-import { trackEvent } from '../../lib/ga4';
+import { trackEvent, trackViewItem, trackConversion, trackShare } from '../../lib/ga4';
 
 interface CompanyDetailProps {
   company: Company | null;
@@ -48,7 +48,7 @@ export default function CompanyDetail({ company, onClose }: CompanyDetailProps) 
 
   const handleWebsiteVisit = () => {
     if (company) {
-      trackEvent("Visit_Website", "Conversion", company.name);
+      trackConversion("website", "official_web", company);
     }
   };
 
@@ -64,11 +64,11 @@ export default function CompanyDetail({ company, onClose }: CompanyDetailProps) 
     try {
       if (navigator.share) {
         await navigator.share(shareData);
-        trackEvent("Share_Company", "Engagement", company.name);
+        trackShare("web_share", company);
       } else {
         await navigator.clipboard.writeText(window.location.href);
         showToast('링크가 클립보드에 복사되었습니다.');
-        trackEvent("Copy_Link", "Engagement", company.name);
+        trackShare("clipboard", company);
       }
     } catch (err) {
       console.error('Error sharing:', err);
@@ -77,7 +77,9 @@ export default function CompanyDetail({ company, onClose }: CompanyDetailProps) 
 
   const openDirections = (type: 'google' | 'kakao' | 'naver') => {
     if (!company) return;
-    trackEvent(`Get_Directions_${type}`, "Engagement", company.name);
+    
+    const targetMap = type === 'google' ? 'google_map' : type === 'kakao' ? 'kakao_map' : 'naver_map';
+    trackConversion("directions", targetMap, company);
 
     const encodedAddress = encodeURIComponent(company.address);
     const encodedName = encodeURIComponent(company.name);
@@ -104,6 +106,9 @@ export default function CompanyDetail({ company, onClose }: CompanyDetailProps) 
   useEffect(() => {
     setCurrentImageIndex(0);
     setImageErrors({});
+    if (company) {
+      trackViewItem(company);
+    }
   }, [company?.id]);
 
   const getImagePath = (path: string) => {
@@ -503,6 +508,7 @@ export default function CompanyDetail({ company, onClose }: CompanyDetailProps) 
                     href={`https://www.work24.go.kr/wk/a/b/1200/retriveDtlEmpSrchList.do?srcKeyword=${encodeURIComponent(company.name)}&regionParam=11470,11500,11560&region=11470,11500,11560`}
                     target="_blank" 
                     rel="noopener noreferrer"
+                    onClick={() => trackConversion("job_portal", "work24", company)}
                     className={cn(
                       "flex flex-col items-center justify-center gap-1.5 py-3 rounded-xl border transition-all font-bold text-[10px]",
                       company.jobs?.work24 
@@ -519,6 +525,7 @@ export default function CompanyDetail({ company, onClose }: CompanyDetailProps) 
                     href={`https://www.saramin.co.kr/zf_user/search/recruit?searchword=${encodeURIComponent(company.name)}`}
                     target="_blank" 
                     rel="noopener noreferrer"
+                    onClick={() => trackConversion("job_portal", "saramin", company)}
                     className={cn(
                       "flex flex-col items-center justify-center gap-1.5 py-3 rounded-xl border transition-all font-bold text-[10px]",
                       company.jobs?.saramin 
@@ -535,6 +542,7 @@ export default function CompanyDetail({ company, onClose }: CompanyDetailProps) 
                     href={`https://www.jobkorea.co.kr/Search/?stext=${encodeURIComponent(company.name)}&tabType=recruit`}
                     target="_blank" 
                     rel="noopener noreferrer"
+                    onClick={() => trackConversion("job_portal", "jobkorea", company)}
                     className={cn(
                       "flex flex-col items-center justify-center gap-1.5 py-3 rounded-xl border transition-all font-bold text-[10px]",
                       company.jobs?.jobkorea 
