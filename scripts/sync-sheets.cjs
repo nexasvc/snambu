@@ -333,27 +333,22 @@ async function sync() {
       }
 
       // --- 채용 정보 하이브리드 업데이트 로직 시작 ---
-      const checkJobsPolicy = rawCompany.check_jobs === 'Y'; // Y: 자동 체크(AUTO), N: 수동(MANUAL)
-      const manualSaramin = rawCompany.saramin?.toUpperCase() === 'Y';
-      const manualJobkorea = rawCompany.jobkorea?.toUpperCase() === 'Y';
-      const manualWork24 = rawCompany.work24?.toUpperCase() === 'Y';
+      const checkJobsPolicy = rawCompany.check_jobs?.toUpperCase(); // AUTO, MANUAL, OFF
+      const manualSaramin = rawCompany.saramin?.toUpperCase() === 'TRUE';
+      const manualJobkorea = rawCompany.jobkorea?.toUpperCase() === 'TRUE';
+      const manualWork24 = rawCompany.work24?.toUpperCase() === 'TRUE';
 
       if (checkJobs) {
-        if (checkJobsPolicy) {
-          // 1. 자동 체크 모드 (AUTO)
-          console.log(`🔍 Auto checking jobs: ${company.name}`);
-          const scraped = await checkJobPortals(company.name);
-          
-          // 스크래핑 결과가 없더라도 시트에 수동으로 Y가 되어있으면 보정(Fallback) 적용
+        if (checkJobsPolicy === 'OFF') {
+          // 1. OFF 모드: 모든 채용 정보 비활성화
+          console.log(`🚫 Job check OFF: ${company.name}`);
           company.jobs = {
-            saramin: scraped.saramin || manualSaramin,
-            jobkorea: scraped.jobkorea || manualJobkorea,
-            work24: scraped.work24 || manualWork24,
-            lastChecked: scraped.lastChecked
+            saramin: false,
+            jobkorea: false,
+            work24: false,
+            lastChecked: new Date().toISOString()
           };
-          // 사이트 차단 방지를 위한 지연
-          await new Promise(resolve => setTimeout(resolve, 1000));
-        } else {
+        } else if (checkJobsPolicy === 'MANUAL') {
           // 2. 수동 모드 (MANUAL) - 시트의 값을 그대로 사용
           console.log(`📝 Manual job info applied: ${company.name}`);
           company.jobs = {
@@ -362,6 +357,20 @@ async function sync() {
             work24: manualWork24,
             lastChecked: new Date().toISOString() + " (MANUAL)"
           };
+        } else {
+          // 3. 자동 체크 모드 (AUTO 또는 기본값)
+          console.log(`🔍 Auto checking jobs: ${company.name}`);
+          const scraped = await checkJobPortals(company.name);
+          
+          // 스크래핑 결과가 없더라도 시트에 TRUE로 되어있으면 보정(Fallback) 적용
+          company.jobs = {
+            saramin: scraped.saramin || manualSaramin,
+            jobkorea: scraped.jobkorea || manualJobkorea,
+            work24: scraped.work24 || manualWork24,
+            lastChecked: scraped.lastChecked
+          };
+          // 사이트 차단 방지를 위한 지연
+          await new Promise(resolve => setTimeout(resolve, 1000));
         }
       } else if (cached && cached.jobs) {
         // --check-jobs 플래그가 없는 경우 기존 데이터 유지
