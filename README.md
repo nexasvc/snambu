@@ -17,7 +17,7 @@
 | **길찾기 연동** | 카카오맵·네이버지도·Google Maps 좌표 기반 목적지 지정 |
 | **채용 모니터링** | 사람인·잡코리아·고용24 공고 여부 자동 감지 |
 | **GA4 분석** | 검색어·필터·웹사이트 방문·길찾기 등 사용자 행동 이벤트 추적 |
-
+| **채용 모니터링** | 사람인·잡코리아·고용24 공고 여부 자동 감지 및 운영자 수동 보정(Hybrid) |
 ---
 
 ## 🚀 핵심 기술 특장점
@@ -25,12 +25,9 @@
 ### 1. Dynamic Geocoding Engine
 도로명 주소만 입력하면 Google Maps Geocoding API가 자동으로 위도·경도를 계산합니다. 이전에 변환된 좌표는 캐싱되어 불필요한 API 호출을 방지합니다.
 
-> **API 키 분리 전략:**  
-> 브라우저용 지도 표시 키(`VITE_GOOGLE_MAPS_API_KEY`)와 서버 사이드 지오코딩 키(`VITE_GOOGLE_GEOCODING_API_KEY`)를 분리합니다.  
-> 브라우저 키에 HTTP Referrer 제한을 걸어도 GitHub Actions의 서버 사이드 동기화에는 영향을 주지 않습니다.
-
-### 2. No-Code 데이터 파이프라인
+### 2. Hybrid 데이터 파이프라인
 - Google Sheets → CSV 파싱 → Zod 스키마 검증 → Geocoding → `companies.json` 저장
+- **채용 동기화 정책**: `AUTO`(자동 스크래핑 + 수동 보정), `MANUAL`(100% 수동), `OFF`(강제 비활성화) 모드 지원
 - `npm run sync` 또는 GitHub Actions 수동 트리거로 원클릭 반영
 
 ### 3. UX/UI 아키텍처
@@ -56,6 +53,8 @@
 | `logo` | `string` | `assets/logos/` 내 파일명 |
 | `industry` | `string` | 산업군 (IT/SW·바이오·유통·건설·서비스·제조) |
 | `certifications` | `string[]` | `지역우수` · `지역맞춤` · `청년도약` |
+| `check_jobs` | `enum` | `AUTO`(스크래핑) · `MANUAL`(수동) · `OFF`(꺼짐) |
+| `saramin` / `jobkorea` / `work24` | `boolean` | `TRUE` 또는 `FALSE` (수동 입력/보정용) |
 | `map_display_status` | `enum` | `VISIBLE` · `HIDDEN` · `DRAFT` · `REVIEW` · `EXPIRED` |
 | `jobs` | `object` | `saramin` · `jobkorea` · `work24` 채용 여부 + `lastChecked` |
 
