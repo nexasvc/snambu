@@ -32,8 +32,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-28T15:32:26.772Z"
+        "work24": false,
+        "lastChecked": "2026-06-28T15:47:35.558Z (MANUAL)"
       }
     },
     {
@@ -70,7 +70,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:32:33.421Z"
+        "lastChecked": "2026-06-28T15:47:35.559Z"
       }
     },
     {
@@ -113,7 +113,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:32:35.600Z"
+        "lastChecked": "2026-06-28T15:47:56.007Z"
       }
     },
     {
@@ -157,7 +157,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:32:39.951Z"
+        "lastChecked": "2026-06-28T15:48:16.037Z"
       }
     },
     {
@@ -189,7 +189,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:32:43.516Z"
+        "lastChecked": "2026-06-28T15:48:35.988Z"
       }
     },
     {
@@ -223,7 +223,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:32:46.855Z"
+        "lastChecked": "2026-06-28T15:48:55.902Z"
       }
     },
     {
@@ -264,7 +264,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:32:49.954Z"
+        "lastChecked": "2026-06-28T15:49:15.871Z"
       }
     },
     {
@@ -305,7 +305,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:32:53.795Z"
+        "lastChecked": "2026-06-28T15:49:36.658Z"
       }
     },
     {
@@ -341,7 +341,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:32:56.887Z"
+        "lastChecked": "2026-06-28T15:49:56.473Z"
       }
     },
     {
@@ -375,8 +375,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-28T15:33:00.104Z"
+        "work24": false,
+        "lastChecked": "2026-06-28T15:50:16.418Z (MANUAL)"
       }
     },
     {
@@ -411,7 +411,7 @@
         "saramin": false,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-28T15:33:03.187Z (MANUAL)"
+        "lastChecked": "2026-06-28T15:50:16.418Z (MANUAL)"
       }
     },
     {
@@ -448,8 +448,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-28T15:33:03.187Z"
+        "work24": false,
+        "lastChecked": "2026-06-28T15:50:16.419Z (MANUAL)"
       }
     },
     {
@@ -492,7 +492,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:06.835Z"
+        "lastChecked": "2026-06-28T15:50:16.419Z"
       }
     },
     {
@@ -532,7 +532,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:09.849Z"
+        "lastChecked": "2026-06-28T15:50:36.223Z"
       }
     },
     {
@@ -570,7 +570,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-28T15:33:12.916Z (MANUAL)"
+        "lastChecked": "2026-06-28T15:50:55.766Z (MANUAL)"
       }
     },
     {
@@ -604,7 +604,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:12.916Z"
+        "lastChecked": "2026-06-28T15:50:55.767Z"
       }
     },
     {
@@ -637,7 +637,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:15.912Z"
+        "lastChecked": "2026-06-28T15:51:15.363Z"
       }
     },
     {
@@ -676,7 +676,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:18.956Z"
+        "lastChecked": "2026-06-28T15:51:34.445Z"
       }
     },
     {
@@ -713,7 +713,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:21.939Z"
+        "lastChecked": "2026-06-28T15:51:53.914Z"
       }
     },
     {
@@ -760,7 +760,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:25.584Z"
+        "lastChecked": "2026-06-28T15:52:12.970Z"
       }
     },
     {
@@ -794,7 +794,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:28.782Z"
+        "lastChecked": "2026-06-28T15:52:32.826Z"
       }
     },
     {
@@ -832,7 +832,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:32.043Z"
+        "lastChecked": "2026-06-28T15:52:52.885Z"
       }
     },
     {
@@ -873,7 +873,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:35.330Z"
+        "lastChecked": "2026-06-28T15:53:12.638Z"
       }
     },
     {
@@ -914,7 +914,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:38.649Z"
+        "lastChecked": "2026-06-28T15:53:33.139Z"
       }
     },
     {
@@ -954,7 +954,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:41.970Z"
+        "lastChecked": "2026-06-28T15:53:52.925Z"
       }
     },
     {
@@ -992,7 +992,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-28T15:33:45.058Z (MANUAL)"
+        "lastChecked": "2026-06-28T15:54:12.820Z (MANUAL)"
       }
     },
     {
@@ -1035,7 +1035,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:45.058Z"
+        "lastChecked": "2026-06-28T15:54:12.820Z"
       }
     },
     {
@@ -1079,7 +1079,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:48.087Z"
+        "lastChecked": "2026-06-28T15:54:32.125Z"
       }
     },
     {
@@ -1126,7 +1126,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:51.223Z"
+        "lastChecked": "2026-06-28T15:54:51.833Z"
       }
     },
     {
@@ -1169,7 +1169,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:54.593Z"
+        "lastChecked": "2026-06-28T15:55:11.687Z"
       }
     },
     {
@@ -1203,7 +1203,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:33:57.942Z"
+        "lastChecked": "2026-06-28T15:55:31.127Z"
       }
     },
     {
@@ -1245,7 +1245,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:01.606Z"
+        "lastChecked": "2026-06-28T15:55:51.016Z"
       }
     },
     {
@@ -1277,7 +1277,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:04.714Z"
+        "lastChecked": "2026-06-28T15:56:11.030Z"
       }
     },
     {
@@ -1314,7 +1314,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:08.129Z"
+        "lastChecked": "2026-06-28T15:56:31.159Z"
       }
     },
     {
@@ -1349,8 +1349,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-28T15:34:11.213Z"
+        "work24": false,
+        "lastChecked": "2026-06-28T15:56:51.099Z (MANUAL)"
       }
     },
     {
@@ -1379,7 +1379,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:14.495Z"
+        "lastChecked": "2026-06-28T15:56:51.100Z"
       }
     },
     {
@@ -1417,8 +1417,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-28T15:34:17.864Z"
+        "work24": false,
+        "lastChecked": "2026-06-28T15:57:10.899Z (MANUAL)"
       }
     },
     {
@@ -1457,7 +1457,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:20.990Z"
+        "lastChecked": "2026-06-28T15:57:10.899Z"
       }
     },
     {
@@ -1486,7 +1486,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:24.285Z"
+        "lastChecked": "2026-06-28T15:57:30.898Z"
       }
     },
     {
@@ -1517,7 +1517,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:27.720Z"
+        "lastChecked": "2026-06-28T15:57:50.686Z"
       }
     },
     {
@@ -1560,7 +1560,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:30.945Z"
+        "lastChecked": "2026-06-28T15:58:10.676Z"
       }
     },
     {
@@ -1594,7 +1594,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:34.271Z"
+        "lastChecked": "2026-06-28T15:58:29.825Z"
       }
     },
     {
@@ -1627,8 +1627,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-28T15:34:37.608Z"
+        "work24": false,
+        "lastChecked": "2026-06-28T15:58:49.654Z (MANUAL)"
       }
     },
     {
@@ -1656,14 +1656,14 @@
       ],
       "website": "https://www.sellpro.co.kr",
       "description": "주식회사 엔트리즈는 독자적인 기술력과 최적화된 인프라를 바탕으로 성장하는 통합 솔루션 에이전시입니다. 체계적인 시스템 운영과 효율적인 조직 관리, 다양한 협력사와의 네트워크를 통해 경쟁력을 강화하고 있으며, 전문인력 양성을 위한 교육과 자기개발 지원을 아끼지 않는 기업입니다. 고객과 임직원이 함께 성장하는 미래지향적인 기업문화를 만들어가고 있습니다.",
-      "map_display_status": "DRAFT",
+      "map_display_status": "VISIBLE",
       "lat": 37.5399845,
       "lng": 126.8942875,
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-28T15:34:41.258Z"
+        "work24": false,
+        "lastChecked": "2026-06-28T15:58:49.654Z (MANUAL)"
       }
     },
     {
@@ -1706,7 +1706,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:44.486Z"
+        "lastChecked": "2026-06-28T15:58:49.654Z"
       }
     },
     {
@@ -1743,7 +1743,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:47.768Z"
+        "lastChecked": "2026-06-28T15:59:09.491Z"
       }
     },
     {
@@ -1777,7 +1777,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:50.923Z"
+        "lastChecked": "2026-06-28T15:59:29.314Z"
       }
     },
     {
@@ -1819,7 +1819,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:54.111Z"
+        "lastChecked": "2026-06-28T15:59:48.146Z"
       }
     },
     {
@@ -1851,7 +1851,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:34:57.401Z"
+        "lastChecked": "2026-06-28T16:00:07.465Z"
       }
     },
     {
@@ -1889,7 +1889,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:35:00.556Z"
+        "lastChecked": "2026-06-28T16:00:27.272Z"
       }
     },
     {
@@ -1925,7 +1925,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:35:03.959Z"
+        "lastChecked": "2026-06-28T16:00:47.368Z"
       }
     },
     {
@@ -1960,7 +1960,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:35:07.166Z"
+        "lastChecked": "2026-06-28T16:01:07.291Z"
       }
     },
     {
@@ -1995,7 +1995,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:35:10.714Z"
+        "lastChecked": "2026-06-28T16:01:27.211Z"
       }
     },
     {
@@ -2034,7 +2034,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:35:13.858Z"
+        "lastChecked": "2026-06-28T16:01:47.115Z"
       }
     },
     {
@@ -2072,7 +2072,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:35:17.151Z"
+        "lastChecked": "2026-06-28T16:02:06.698Z"
       }
     },
     {
@@ -2113,7 +2113,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:35:20.440Z"
+        "lastChecked": "2026-06-28T16:02:26.285Z"
       }
     },
     {
@@ -2145,7 +2145,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:35:23.965Z"
+        "lastChecked": "2026-06-28T16:02:45.708Z"
       }
     },
     {
@@ -2179,7 +2179,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:35:27.726Z"
+        "lastChecked": "2026-06-28T16:03:05.779Z"
       }
     },
     {
@@ -2208,7 +2208,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:35:30.799Z"
+        "lastChecked": "2026-06-28T16:03:25.635Z"
       }
     },
     {
@@ -2249,7 +2249,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:35:34.135Z"
+        "lastChecked": "2026-06-28T16:03:45.354Z"
       }
     },
     {
@@ -2290,9 +2290,9 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-28T15:35:37.407Z"
+        "lastChecked": "2026-06-28T16:04:04.852Z"
       }
     }
   ],
-  "lastUpdated": "2026-06-28T15:35:41.064Z"
+  "lastUpdated": "2026-06-28T16:04:25.004Z"
 }
