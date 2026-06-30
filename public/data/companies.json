@@ -33,7 +33,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-29T15:06:09.403Z (MANUAL)"
+        "lastChecked": "2026-06-30T14:42:40.888Z (MANUAL)"
       }
     },
     {
@@ -70,7 +70,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:06:09.404Z"
+        "lastChecked": "2026-06-30T14:42:40.889Z"
       }
     },
     {
@@ -110,10 +110,10 @@
       "lat": 37.5642412,
       "lng": 126.8233268,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:06:24.833Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:42:47.259Z (MANUAL)"
       }
     },
     {
@@ -157,7 +157,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:06:39.210Z"
+        "lastChecked": "2026-06-30T14:42:47.259Z"
       }
     },
     {
@@ -186,10 +186,10 @@
       "lat": 37.5249386,
       "lng": 126.894037,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:06:53.809Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:42:50.705Z (MANUAL)"
       }
     },
     {
@@ -223,7 +223,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:07:08.192Z"
+        "lastChecked": "2026-06-30T14:42:50.705Z"
       }
     },
     {
@@ -264,7 +264,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:07:22.069Z"
+        "lastChecked": "2026-06-30T14:42:53.885Z"
       }
     },
     {
@@ -305,7 +305,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:07:36.742Z"
+        "lastChecked": "2026-06-30T14:42:57.384Z"
       }
     },
     {
@@ -341,7 +341,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:07:51.698Z"
+        "lastChecked": "2026-06-30T14:43:00.361Z"
       }
     },
     {
@@ -376,7 +376,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-29T15:08:05.524Z (MANUAL)"
+        "lastChecked": "2026-06-30T14:43:03.352Z (MANUAL)"
       }
     },
     {
@@ -411,7 +411,7 @@
         "saramin": false,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-29T15:08:05.524Z (MANUAL)"
+        "lastChecked": "2026-06-30T14:43:03.352Z (MANUAL)"
       }
     },
     {
@@ -449,7 +449,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-29T15:08:05.524Z (MANUAL)"
+        "lastChecked": "2026-06-30T14:43:03.353Z (MANUAL)"
       }
     },
     {
@@ -491,8 +491,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:08:05.524Z"
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:03.353Z (MANUAL)"
       }
     },
     {
@@ -531,8 +531,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:08:19.303Z"
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:03.353Z (MANUAL)"
       }
     },
     {
@@ -570,7 +570,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-29T15:08:33.827Z (MANUAL)"
+        "lastChecked": "2026-06-30T14:43:03.353Z (MANUAL)"
       }
     },
     {
@@ -604,7 +604,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:08:33.828Z"
+        "lastChecked": "2026-06-30T14:43:03.353Z"
       }
     },
     {
@@ -635,9 +635,9 @@
       "lng": 126.841834,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:08:48.175Z"
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:06.299Z (MANUAL)"
       }
     },
     {
@@ -674,9 +674,9 @@
       "lng": 126.8919793,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:09:02.381Z"
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:06.299Z (MANUAL)"
       }
     },
     {
@@ -711,9 +711,9 @@
       "lng": 126.890327,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:09:16.639Z"
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:06.299Z (MANUAL)"
       }
     },
     {
@@ -757,10 +757,10 @@
       "lat": 37.536724,
       "lng": 126.8967848,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:09:34.062Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:06.299Z (MANUAL)"
       }
     },
     {
@@ -791,10 +791,10 @@
       "lat": 37.536165,
       "lng": 126.8918554,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:09:49.066Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:06.300Z (MANUAL)"
       }
     },
     {
@@ -832,7 +832,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:10:03.416Z"
+        "lastChecked": "2026-06-30T14:43:06.300Z"
       }
     },
     {
@@ -870,10 +870,10 @@
       "lat": 37.5268181,
       "lng": 126.9041497,
       "jobs": {
-        "saramin": true,
+        "saramin": false,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:10:17.720Z"
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:09.610Z (MANUAL)"
       }
     },
     {
@@ -911,10 +911,10 @@
       "lat": 37.5202291,
       "lng": 126.890132,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:10:32.110Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:09.610Z (MANUAL)"
       }
     },
     {
@@ -951,10 +951,10 @@
       "lat": 37.5147541,
       "lng": 126.8989475,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:10:46.305Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:09.610Z (MANUAL)"
       }
     },
     {
@@ -992,7 +992,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-29T15:11:00.666Z (MANUAL)"
+        "lastChecked": "2026-06-30T14:43:09.610Z (MANUAL)"
       }
     },
     {
@@ -1037,7 +1037,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-29T15:11:00.666Z"
+        "lastChecked": "2026-06-30T14:43:09.610Z"
       }
     },
     {
@@ -1081,7 +1081,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:11:00.666Z"
+        "lastChecked": "2026-06-30T14:43:09.610Z"
       }
     },
     {
@@ -1125,10 +1125,10 @@
       "lat": 37.5388416,
       "lng": 126.8907376,
       "jobs": {
-        "saramin": true,
+        "saramin": false,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:11:15.891Z"
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:12.705Z (MANUAL)"
       }
     },
     {
@@ -1168,10 +1168,10 @@
       "lat": 37.5190066,
       "lng": 126.8859677,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:11:30.392Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:12.705Z (MANUAL)"
       }
     },
     {
@@ -1202,10 +1202,10 @@
       "lat": 37.5266189,
       "lng": 126.8917848,
       "jobs": {
-        "saramin": true,
+        "saramin": false,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:11:45.068Z"
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:12.705Z (MANUAL)"
       }
     },
     {
@@ -1246,8 +1246,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:11:59.371Z"
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:12.705Z (MANUAL)"
       }
     },
     {
@@ -1279,7 +1279,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:12:13.696Z"
+        "lastChecked": "2026-06-30T14:43:12.705Z"
       }
     },
     {
@@ -1316,7 +1316,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:12:27.665Z"
+        "lastChecked": "2026-06-30T14:43:15.916Z"
       }
     },
     {
@@ -1350,9 +1350,9 @@
       "lng": 126.9218996,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-29T15:12:42.125Z (MANUAL)"
+        "lastChecked": "2026-06-30T14:43:18.862Z (MANUAL)"
       }
     },
     {
@@ -1378,10 +1378,10 @@
       "lat": 37.5121163,
       "lng": 126.8970499,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:12:42.125Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:18.862Z (MANUAL)"
       }
     },
     {
@@ -1418,9 +1418,9 @@
       "lng": 126.8167292,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-29T15:12:56.533Z (MANUAL)"
+        "lastChecked": "2026-06-30T14:43:18.862Z (MANUAL)"
       }
     },
     {
@@ -1458,8 +1458,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:12:56.534Z"
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:18.863Z (MANUAL)"
       }
     },
     {
@@ -1488,7 +1488,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:13:10.907Z"
+        "lastChecked": "2026-06-30T14:43:18.863Z"
       }
     },
     {
@@ -1516,10 +1516,10 @@
       "lat": 37.5110945,
       "lng": 126.9132262,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:13:25.241Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:22.161Z (MANUAL)"
       }
     },
     {
@@ -1562,7 +1562,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:13:39.935Z"
+        "lastChecked": "2026-06-30T14:43:22.162Z"
       }
     },
     {
@@ -1597,8 +1597,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:13:54.799Z"
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:25.423Z (MANUAL)"
       }
     },
     {
@@ -1632,7 +1632,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-06-29T15:14:09.240Z (MANUAL)"
+        "lastChecked": "2026-06-30T14:43:25.423Z (MANUAL)"
       }
     },
     {
@@ -1664,10 +1664,10 @@
       "lat": 37.5399845,
       "lng": 126.8942875,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
+        "saramin": false,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-06-29T15:14:09.241Z (MANUAL)"
+        "lastChecked": "2026-06-30T14:43:25.423Z (MANUAL)"
       }
     },
     {
@@ -1709,8 +1709,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:14:09.241Z"
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:25.423Z (MANUAL)"
       }
     },
     {
@@ -1744,10 +1744,10 @@
       "lat": 37.52028490000001,
       "lng": 126.8933805,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:14:25.367Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:25.423Z (MANUAL)"
       }
     },
     {
@@ -1780,8 +1780,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:14:39.712Z"
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:25.423Z (MANUAL)"
       }
     },
     {
@@ -1822,8 +1822,8 @@
       "jobs": {
         "saramin": true,
         "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:14:55.292Z"
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:25.423Z (MANUAL)"
       }
     },
     {
@@ -1855,7 +1855,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:15:09.542Z"
+        "lastChecked": "2026-06-30T14:43:25.423Z"
       }
     },
     {
@@ -1890,10 +1890,10 @@
       "lat": 37.5233861,
       "lng": 126.9234738,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
+        "saramin": false,
+        "jobkorea": false,
         "work24": true,
-        "lastChecked": "2026-06-29T15:15:23.333Z"
+        "lastChecked": "2026-06-30T14:43:28.630Z (MANUAL)"
       }
     },
     {
@@ -1916,7 +1916,6 @@
       "benefits": "1. 회의실 \n2. 라운지 및 휴게실 \n3. 사내 AI 챗봇 운영",
       "workEnvironment": [],
       "images": [
-        "주식회사퀀팃1.jpg",
         "주식회사퀀팃2.jpg",
         "주식회사퀀팃3.jpg"
       ],
@@ -1926,10 +1925,10 @@
       "lat": 37.521718,
       "lng": 126.9190616,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:15:37.808Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:28.630Z (MANUAL)"
       }
     },
     {
@@ -1961,10 +1960,10 @@
       "lat": 37.5272327,
       "lng": 126.9167886,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:15:52.450Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:28.631Z (MANUAL)"
       }
     },
     {
@@ -1999,7 +1998,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:16:06.816Z"
+        "lastChecked": "2026-06-30T14:43:28.631Z"
       }
     },
     {
@@ -2035,10 +2034,10 @@
       "lat": 37.5244869,
       "lng": 126.9237678,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:16:21.077Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:31.621Z (MANUAL)"
       }
     },
     {
@@ -2076,7 +2075,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:16:35.713Z"
+        "lastChecked": "2026-06-30T14:43:31.621Z"
       }
     },
     {
@@ -2115,9 +2114,9 @@
       "lng": 126.8859677,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:16:50.422Z"
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:34.787Z (MANUAL)"
       }
     },
     {
@@ -2146,10 +2145,10 @@
       "lat": 37.5187168,
       "lng": 126.9035606,
       "jobs": {
-        "saramin": true,
-        "jobkorea": true,
-        "work24": true,
-        "lastChecked": "2026-06-29T15:17:05.778Z"
+        "saramin": false,
+        "jobkorea": false,
+        "work24": false,
+        "lastChecked": "2026-06-30T14:43:34.787Z (MANUAL)"
       }
     },
     {
@@ -2183,7 +2182,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:17:20.230Z"
+        "lastChecked": "2026-06-30T14:43:34.787Z"
       }
     },
     {
@@ -2212,7 +2211,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:17:34.433Z"
+        "lastChecked": "2026-06-30T14:43:37.916Z"
       }
     },
     {
@@ -2253,7 +2252,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:17:47.999Z"
+        "lastChecked": "2026-06-30T14:43:41.130Z"
       }
     },
     {
@@ -2294,9 +2293,9 @@
         "saramin": true,
         "jobkorea": true,
         "work24": true,
-        "lastChecked": "2026-06-29T15:18:02.374Z"
+        "lastChecked": "2026-06-30T14:43:44.302Z"
       }
     }
   ],
-  "lastUpdated": "2026-06-29T15:18:16.592Z"
+  "lastUpdated": "2026-06-30T14:43:47.516Z"
 }
