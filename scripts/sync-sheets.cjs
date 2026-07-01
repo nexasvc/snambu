@@ -51,136 +51,194 @@ const CompanySchema = z.object({
   }).optional(),
 });
 
+const JOB_PORTALS = ['saramin', 'jobkorea', 'work24'];
+const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+
+function normalizeCompanyName(name) {
+  return (name || '')
+    .replace(/\(주\)|㈜|주식회사|\(유\)|유한회사|\(사\)|사단법인|의료법인/g, '')
+    .replace(/[^\p{L}\p{N}]/gu, '')
+    .toLowerCase()
+    .trim();
+}
+
+function cleanCompanySearchName(name) {
+  return (name || '')
+    .replace(/\(주\)|㈜|주식회사|\(유\)|유한회사|\(사\)|사단법인|의료법인/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function parseSheetBoolean(value) {
+  const normalized = String(value ?? '').trim().toUpperCase();
+  if (['TRUE', 'Y', 'YES', '1', 'O'].includes(normalized)) return true;
+  if (['FALSE', 'N', 'NO', '0', 'X'].includes(normalized)) return false;
+  return null;
+}
+
+function createJobCheck(status, confidence, evidence = [], meta = {}) {
+  return { status, confidence, evidence, ...meta };
+}
+
+function isBotOrBlockedPage(data = '') {
+  return /captcha|비정상|보안문자|접근이 제한|access denied|cloudflare|잠시 후 다시|자동화된 접근|robot/i.test(data);
+}
+
+async function fetchPortalHtml(url, headers = {}, timeout = 12000) {
+  try {
+    const response = await axios.get(url, {
+      headers: {
+        'User-Agent': USER_AGENT,
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+        ...headers
+      },
+      timeout
+    });
+
+    const data = String(response.data || '');
+    if (isBotOrBlockedPage(data)) {
+      return createJobCheck('unknown', 0, ['blocked_or_security_page'], { httpStatus: response.status });
+    }
+
+    return { data, httpStatus: response.status };
+  } catch (error) {
+    const status = error.response?.status;
+    const evidence = status ? [`http_${status}`] : ['request_failed'];
+    return createJobCheck('unknown', 0, evidence, { error: error.message, httpStatus: status });
+  }
+}
+
+function extractCount(data, patterns) {
+  for (const pattern of patterns) {
+    const match = data.match(pattern);
+    if (match) return parseInt(match[1].replace(/,/g, ''), 10);
+  }
+  return null;
+}
+
+function hasCompanyNameSignal(data, companyName) {
+  const normalizedData = normalizeCompanyName(data);
+  const normalizedName = normalizeCompanyName(companyName);
+  return normalizedName.length >= 2 && normalizedData.includes(normalizedName);
+}
+
+async function checkSaramin(name, searchName) {
+  const fetched = await fetchPortalHtml(`https://www.saramin.co.kr/zf_user/search/recruit?searchword=${searchName}`);
+  if (!fetched.data) return fetched;
+
+  const data = fetched.data;
+  const evidence = [];
+  const hasItems = data.includes('item_recruit') || data.includes('list_body') || data.includes('recruit_list');
+  const hasNoResults = data.includes('검색결과가 없습니다') || data.includes('총 0건') || data.includes('조건에 맞는 결과가 없습니다');
+  const companyMatched = hasCompanyNameSignal(data, name);
+
+  if (hasNoResults) evidence.push('no_result_message');
+  if (hasItems) evidence.push('posting_list_marker');
+  if (companyMatched) evidence.push('company_name_match');
+
+  if (hasNoResults) return createJobCheck('closed', 0.9, evidence);
+  if (hasItems && companyMatched) return createJobCheck('open', 0.86, evidence);
+  if (hasItems) return createJobCheck('unknown', 0.45, evidence.concat('list_without_company_match'));
+
+  return createJobCheck('closed', 0.65, evidence.concat('no_posting_marker'));
+}
+
+async function checkJobKorea(name, searchName) {
+  const fetched = await fetchPortalHtml(
+    `https://www.jobkorea.co.kr/Search/?stext=${searchName}&tabType=recruit`,
+    {
+      'Referer': 'https://www.jobkorea.co.kr/',
+      'Cache-Control': 'no-cache'
+    },
+    15000
+  );
+  if (!fetched.data) return fetched;
+
+  const data = fetched.data;
+  const evidence = [];
+  const jobsCount = extractCount(data, [
+    /jobsLength\\?":\s*(\d+)/,
+    /resultCount\\?":\s*(\d+)/,
+    /총\s*([\d,]+)건의\s*검색결과/
+  ]);
+  const hasItems = data.includes('list-post') || data.includes('post-list') ||
+    data.includes('recruit-info') || data.includes('list-default') ||
+    data.includes('JOB_POSTING') || data.includes('jobPlatformId') ||
+    data.includes('dev.jobkorea.co.kr') || data.includes('posting-item');
+  const hasNoResults = data.includes('검색결과가 없습니다') || data.includes('0건의 검색결과') || /jobsLength\\?":0/.test(data);
+  const companyMatched = hasCompanyNameSignal(data, name);
+
+  if (jobsCount !== null) evidence.push(`count_${jobsCount}`);
+  if (hasItems) evidence.push('posting_list_marker');
+  if (hasNoResults) evidence.push('no_result_message');
+  if (companyMatched) evidence.push('company_name_match');
+
+  if (jobsCount === 0 || (hasNoResults && !hasItems)) return createJobCheck('closed', 0.9, evidence);
+  if ((jobsCount && jobsCount > 0) && companyMatched) return createJobCheck('open', 0.88, evidence);
+  if (hasItems && companyMatched) return createJobCheck('open', 0.82, evidence);
+  if ((jobsCount && jobsCount > 0) || hasItems) return createJobCheck('unknown', 0.5, evidence.concat('list_without_company_match'));
+
+  return createJobCheck('closed', 0.65, evidence.concat('no_posting_marker'));
+}
+
+async function checkWork24(name, searchName) {
+  const fetched = await fetchPortalHtml(
+    `https://www.work24.go.kr/wk/a/b/1200/retriveDtlEmpSrchList.do?srcKeyword=${searchName}&regionParam=11500,11470,11560&region=11500,11470,11560`
+  );
+  if (!fetched.data) return fetched;
+
+  const data = fetched.data;
+  const evidence = [];
+  const hasListTable = data.includes('emplym_list') || data.includes('empSrchList') || data.includes('table_list') || data.includes('board_list');
+  const noDataMessage = data.includes('검색 결과가 없습니다') || data.includes('데이터가 존재하지 않습니다') || data.includes('등록된 내역이 없습니다');
+  const zeroCountPattern = /total_cnt[^>]*>0<\/em/i.test(data) || /전체\s*<em>0<\/em>\s*건/i.test(data) || /검색결과\s*0\s*건/i.test(data);
+  const hasDetailLink = data.includes('retriveDtl') || data.includes('goDtlEmp');
+  const companyMatched = hasCompanyNameSignal(data, name);
+
+  if (hasListTable) evidence.push('posting_list_marker');
+  if (hasDetailLink) evidence.push('detail_link_marker');
+  if (noDataMessage || zeroCountPattern) evidence.push('no_result_message');
+  if (companyMatched) evidence.push('company_name_match');
+
+  if (noDataMessage || zeroCountPattern) return createJobCheck('closed', 0.9, evidence);
+  if (hasDetailLink && companyMatched) return createJobCheck('open', 0.88, evidence);
+  if (hasListTable && companyMatched) return createJobCheck('open', 0.8, evidence);
+  if (hasListTable || hasDetailLink) return createJobCheck('unknown', 0.5, evidence.concat('list_without_company_match'));
+
+  return createJobCheck('closed', 0.65, evidence.concat('no_posting_marker'));
+}
+
 /**
  * 채용 사이트별 공고 여부 확인
  */
 async function checkJobPortals(name) {
-  const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
-  const results = {
-    saramin: false,
-    jobkorea: false,
-    work24: false,
-    lastChecked: new Date().toISOString()
+  const cleanName = cleanCompanySearchName(name);
+  const normalizedName = normalizeCompanyName(name);
+  const searchName = encodeURIComponent(cleanName || name);
+  const checkedAt = new Date().toISOString();
+
+  const details = {
+    saramin: await checkSaramin(name, searchName),
+    jobkorea: await checkJobKorea(name, searchName),
+    work24: await checkWork24(name, searchName)
   };
 
-  // 검색어 정제: 사명에 포함된 (주), 주식회사, (유) 등 제거하여 검색 정확도 향상
-  const cleanName = name.replace(/\(주\)|주식회사|\(유\)|유한회사|\(사\)|사단법인/g, '').trim();
-  const searchName = encodeURIComponent(cleanName || name);
+  const results = {
+    saramin: details.saramin.status === 'open',
+    jobkorea: details.jobkorea.status === 'open',
+    work24: details.work24.status === 'open',
+    lastChecked: checkedAt,
+    details
+  };
 
-  try {
-    // 1. 사람인
-    const saraminRes = await axios.get(`https://www.saramin.co.kr/zf_user/search/recruit?searchword=${searchName}`, {
-      headers: { 'User-Agent': USER_AGENT },
-      timeout: 10000
-    }).catch(() => null);
-    
-    if (saraminRes) {
-      const data = saraminRes.data;
-      // 강력한 긍정 신호: 공고 아이템 클래스 또는 리스트 바디 존재 여부
-      const hasItems = data.includes('item_recruit') || data.includes('list_body') || data.includes('recruit_list');
-      // 부정 신호: 결과 없음 패턴
-      const hasNoResults = data.includes('검색결과가 없습니다') || data.includes('총 0건') || data.includes('조건에 맞는 결과가 없습니다');
-      
-      results.saramin = hasItems && !hasNoResults;
-      
-      // ANS개발과 같이 사명이 명확히 포함된 경우 추가 구제
-      if (!results.saramin && data.includes(cleanName) && data.includes('item')) {
-        results.saramin = true;
-      }
-    }
-
-    // 2. 잡코리아
-    const jobkoreaRes = await axios.get(`https://www.jobkorea.co.kr/Search/?stext=${searchName}&tabType=recruit`, {
-      headers: { 
-        'User-Agent': USER_AGENT,
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-        'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
-        'Referer': 'https://www.jobkorea.co.kr/',
-        'Cache-Control': 'no-cache'
-      },
-      timeout: 15000
-    }).catch((err) => {
-      if (name.includes('이사대학')) {
-        console.log(`❌ JobKorea Request Failed for ${name}: ${err.message}`);
-      }
-      return null;
-    });
-    
-    if (jobkoreaRes) {
-      const data = jobkoreaRes.data;
-      
-      // 1. Next.js Hydration 데이터에서 정확한 숫자 추출
-      const jobsLengthMatch = data.match(/jobsLength\\?":\s*(\d+)/);
-      const resultCountMatch = data.match(/resultCount\\?":\s*(\d+)/);
-      const jobsCount = jobsLengthMatch ? parseInt(jobsLengthMatch[1]) : (resultCountMatch ? parseInt(resultCountMatch[1]) : 0);
-
-      // 2. 강력한 긍정 신호
-      const hasItems = data.includes('list-post') || data.includes('post-list') || 
-                       data.includes('recruit-info') || data.includes('list-default') ||
-                       data.includes('JOB_POSTING') || data.includes('jobPlatformId') ||
-                       data.includes('dev.jobkorea.co.kr') || data.includes('posting-item');
-                       
-      // 3. 부정 신호
-      const isZeroJobs = jobsCount === 0 && (data.includes('검색결과가 없습니다') || data.includes('0건의 검색결과'));
-      
-      // 4. 추가 긍정 신호: HTML 내의 공고 수 텍스트 (총 X건의 검색결과)
-      const textCountMatch = data.match(/총\s*([\d,]+)건의\s*검색결과/);
-      const textCount = textCountMatch ? parseInt(textCountMatch[1].replace(/,/g, '')) : 0;
-
-      if (jobsCount > 0 || textCount > 0) {
-        results.jobkorea = true;
-      } else {
-        results.jobkorea = hasItems && !isZeroJobs;
-      }
-      
-      // 5. 특별 케이스 구제
-      if (!results.jobkorea && data.includes(cleanName) && 
-          (data.includes('item') || data.includes('list') || data.includes('post') || data.includes('recruit'))) {
-        if (!data.includes('검색결과가 없습니다') && !/jobsLength\\?":0/.test(data)) {
-          results.jobkorea = true;
-        }
-      }
-
-      // 디버깅: GitHub Actions 환경에서 원인 파악을 위한 로그
-      if (!results.jobkorea && (name.includes('이사대학') || name.includes('피앤피시큐어'))) {
-        console.log(`⚠️ [Debug] JobKorea false for ${name}: len=${data.length}, jobsCount=${jobsCount}, textCount=${textCount}, hasItems=${hasItems}, isZeroJobs=${isZeroJobs}`);
-        if (data.includes('Login') || data.includes('Security') || data.includes('Captcha')) {
-          console.log(`🚨 Possible bot detection or redirect detected in the response.`);
-        }
-      }
-    } else if (name.includes('이사대학')) {
-        console.log(`⚠️ [Debug] JobKorea Response is NULL for ${name}`);
-    }
-
-    // 3. 고용24 (워크24)
-    // regionParam과 region 모두 사용하여 검색 안정성 확보 (11500:강서, 11470:양천, 11560:영등포)
-    const work24Res = await axios.get(`https://www.work24.go.kr/wk/a/b/1200/retriveDtlEmpSrchList.do?srcKeyword=${searchName}&regionParam=11500,11470,11560&region=11500,11470,11560`, {
-      headers: { 'User-Agent': USER_AGENT },
-      timeout: 10000
-    }).catch(() => null);
-    
-    if (work24Res) {
-      const data = work24Res.data;
-      // 고용24 고유의 리스트 패턴 및 결과 없음 패턴 정밀화
-      const hasListTable = data.includes('emplym_list') || data.includes('empSrchList') || data.includes('table_list') || data.includes('board_list');
-      const noDataMessage = data.includes('검색 결과가 없습니다') || data.includes('데이터가 존재하지 않습니다') || data.includes('등록된 내역이 없습니다');
-      
-      // 검색된 공고 수가 0인지 확인하는 패턴 (예: <em class="total_cnt">0</em> 또는 '전체 0건')
-      const zeroCountPattern = /total_cnt[^>]*>0<\/em/i.test(data) || /전체\s*<em>0<\/em>\s*건/i.test(data) || /검색결과\s*0\s*건/i.test(data);
-      
-      results.work24 = hasListTable && !noDataMessage && !zeroCountPattern;
-      
-      // "ANS개발"과 같이 사명이 데이터에 직접 나타나고 상세 공고 링크(retriveDtl)가 보인다면 긍정 결과로 구제
-      if (!results.work24 && data.includes(cleanName) && (data.includes('retriveDtl') || data.includes('goDtlEmp'))) {
-        results.work24 = true;
-      }
-    }
-
-    console.log(`🔍 Job Check Result for [${name}] (Search: ${cleanName}): Saramin(${results.saramin}), JobKorea(${results.jobkorea}), Work24(${results.work24})`);
-    
-  } catch (error) {
-    console.warn(`⚠️ Failed to check jobs for ${name}: ${error.message}`);
-  }
+  console.log(
+    `🔍 Job Check Result for [${name}] (Search: ${cleanName}, Match: ${normalizedName}): ` +
+    JOB_PORTALS.map(portal => {
+      const detail = details[portal];
+      return `${portal}(${detail.status},${detail.confidence})`;
+    }).join(', ')
+  );
 
   return results;
 }
@@ -334,9 +392,11 @@ async function sync() {
 
       // --- 채용 정보 하이브리드 업데이트 로직 시작 ---
       const checkJobsPolicy = rawCompany.check_jobs?.toUpperCase(); // AUTO, MANUAL, OFF
-      const manualSaramin = rawCompany.saramin?.toUpperCase() === 'TRUE';
-      const manualJobkorea = rawCompany.jobkorea?.toUpperCase() === 'TRUE';
-      const manualWork24 = rawCompany.work24?.toUpperCase() === 'TRUE';
+      const manualJobs = {
+        saramin: parseSheetBoolean(rawCompany.saramin),
+        jobkorea: parseSheetBoolean(rawCompany.jobkorea),
+        work24: parseSheetBoolean(rawCompany.work24)
+      };
 
       if (checkJobs) {
         if (checkJobsPolicy === 'OFF') {
@@ -352,23 +412,50 @@ async function sync() {
           // 2. 수동 모드 (MANUAL) - 시트의 값을 그대로 사용
           console.log(`📝 Manual job info applied: ${company.name}`);
           company.jobs = {
-            saramin: manualSaramin,
-            jobkorea: manualJobkorea,
-            work24: manualWork24,
+            saramin: manualJobs.saramin === true,
+            jobkorea: manualJobs.jobkorea === true,
+            work24: manualJobs.work24 === true,
             lastChecked: new Date().toISOString() + " (MANUAL)"
           };
         } else {
           // 3. 자동 체크 모드 (AUTO 또는 기본값)
+          // 시트의 사이트별 TRUE/FALSE는 수기 확인값으로 보고 자동 스크래핑보다 우선한다.
           console.log(`🔍 Auto checking jobs: ${company.name}`);
           const scraped = await checkJobPortals(company.name);
-          
-          // 스크래핑 결과가 없더라도 시트에 TRUE로 되어있으면 보정(Fallback) 적용
+
           company.jobs = {
-            saramin: scraped.saramin || manualSaramin,
-            jobkorea: scraped.jobkorea || manualJobkorea,
-            work24: scraped.work24 || manualWork24,
             lastChecked: scraped.lastChecked
           };
+
+          JOB_PORTALS.forEach((portal) => {
+            const manualValue = manualJobs[portal];
+            const detail = scraped.details[portal];
+
+            if (manualValue !== null) {
+              company.jobs[portal] = manualValue;
+              return;
+            }
+
+            if (detail.status === 'unknown' && cached?.jobs && typeof cached.jobs[portal] === 'boolean') {
+              company.jobs[portal] = cached.jobs[portal];
+              return;
+            }
+
+            company.jobs[portal] = detail.status === 'open';
+          });
+
+          console.log(
+            `🧾 Job Merge for [${company.name}]: ` +
+            JOB_PORTALS.map(portal => {
+              const source = manualJobs[portal] !== null
+                ? 'manual'
+                : scraped.details[portal].status === 'unknown' && cached?.jobs && typeof cached.jobs[portal] === 'boolean'
+                  ? 'cached'
+                  : 'auto';
+              return `${portal}=${company.jobs[portal]}(${source})`;
+            }).join(', ')
+          );
+
           // 사이트 차단 방지를 위한 지연
           await new Promise(resolve => setTimeout(resolve, 1000));
         }
@@ -394,6 +481,102 @@ async function sync() {
     generateSitemap(companies);
   } catch (error) {
     console.error('💥 Sync failed:', error.message);
+    process.exit(1);
+  }
+}
+
+async function auditJobDifferences() {
+  try {
+    console.log('🧪 Starting job status audit against Google Sheet values...');
+
+    const response = await axios.get(SHEET_URL);
+    const records = parseCsv(response.data);
+    if (records.length < 2) throw new Error('No data found in sheet');
+
+    const headers = records[0];
+    const differences = [];
+    const unknowns = [];
+    const skipped = [];
+
+    for (let i = 1; i < records.length; i++) {
+      const values = records[i];
+      const rawCompany = {};
+
+      headers.forEach((header, index) => {
+        rawCompany[header] = values[index] || '';
+      });
+
+      const name = rawCompany.name?.trim();
+      if (!name) continue;
+
+      const policy = rawCompany.check_jobs?.trim().toUpperCase() || 'AUTO';
+      if (policy === 'OFF') {
+        skipped.push({ name, reason: 'check_jobs=OFF' });
+        continue;
+      }
+
+      const manualJobs = {
+        saramin: parseSheetBoolean(rawCompany.saramin),
+        jobkorea: parseSheetBoolean(rawCompany.jobkorea),
+        work24: parseSheetBoolean(rawCompany.work24)
+      };
+
+      if (JOB_PORTALS.every(portal => manualJobs[portal] === null)) {
+        skipped.push({ name, reason: 'no manual site values' });
+        continue;
+      }
+
+      const scraped = await checkJobPortals(name);
+
+      JOB_PORTALS.forEach((portal) => {
+        const manual = manualJobs[portal];
+        if (manual === null) return;
+
+        const detail = scraped.details[portal];
+        if (detail.status === 'unknown') {
+          unknowns.push({
+            name,
+            portal,
+            sheet: manual,
+            autoStatus: detail.status,
+            confidence: detail.confidence,
+            evidence: detail.evidence
+          });
+          return;
+        }
+
+        const auto = detail.status === 'open';
+        if (manual !== auto) {
+          differences.push({
+            name,
+            portal,
+            sheet: manual,
+            auto,
+            autoStatus: detail.status,
+            confidence: detail.confidence,
+            evidence: detail.evidence
+          });
+        }
+      });
+
+      await new Promise(resolve => setTimeout(resolve, 1000));
+    }
+
+    console.log('\n=== JOB_AUDIT_DIFFERENCES_JSON_START ===');
+    console.log(JSON.stringify({
+      checkedAt: new Date().toISOString(),
+      differences,
+      unknowns,
+      skipped,
+      summary: {
+        differences: differences.length,
+        unknowns: unknowns.length,
+        skipped: skipped.length
+      }
+    }, null, 2));
+    console.log('=== JOB_AUDIT_DIFFERENCES_JSON_END ===');
+  } catch (error) {
+    console.error('💥 Job audit failed:', error.message);
     process.exit(1);
   }
 }
@@ -449,4 +632,8 @@ Sitemap: ${baseUrl}/sitemap.xml
   console.log(`✅ robots.txt generated at ${robotsPath}`);
 }
 
-sync();
+if (process.argv.includes('--audit-jobs')) {
+  auditJobDifferences();
+} else {
+  sync();
+}
