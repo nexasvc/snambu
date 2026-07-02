@@ -77,7 +77,7 @@
       "id": "1100005",
       "name": "(주)피앤피시큐어",
       "region": "강서구",
-      "address": "서울특별시 강서구 마곡동 마곡서로 182 피앤피스테이션",
+      "address": "서울특별시 강서구 마곡동 피앤피시큐어",
       "logo": "01.PNPSECURE CI_기본형.png",
       "industry": "IT/SW",
       "industryDetail": "정보보안 소프트웨어개발 공급",
@@ -107,8 +107,8 @@
       "website": "https://pnpsecure.com/",
       "description": "피앤피시큐어는 네트워크 보안 제품에서 클라우드, 생체 인증 보안에 이르기까지 탄탄한 기술력으로 성장을 거듭해왔으며 차세대 글로벌 IT기업으로 도약하고 있습니다",
       "map_display_status": "VISIBLE",
-      "lat": 37.5642412,
-      "lng": 126.8233268,
+      "lat": 37.5698181,
+      "lng": 126.8256217,
       "jobs": {
         "saramin": false,
         "jobkorea": false,
@@ -2297,5 +2297,5 @@
       }
     }
   ],
-  "lastUpdated": "2026-07-02T04:39:35.998Z"
+  "lastUpdated": "2026-07-02T05:16:18.345Z"
 }
