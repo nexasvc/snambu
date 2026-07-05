@@ -33,7 +33,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:17.618Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:11:17.828Z (MANUAL)"
       }
     },
     {
@@ -67,7 +67,7 @@
       "lat": 37.5300685,
       "lng": 126.9262455,
       "jobs": {
-        "lastChecked": "2026-07-02T04:38:17.620Z",
+        "lastChecked": "2026-07-05T14:11:17.830Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -110,10 +110,10 @@
       "lat": 37.5698181,
       "lng": 126.8256217,
       "jobs": {
-        "saramin": false,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-07-02T04:38:25.029Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:11:26.297Z",
+        "saramin": true,
+        "jobkorea": true,
+        "work24": false
       }
     },
     {
@@ -154,7 +154,7 @@
       "lat": 37.5260497,
       "lng": 126.928296,
       "jobs": {
-        "lastChecked": "2026-07-02T04:38:25.030Z",
+        "lastChecked": "2026-07-05T14:11:30.776Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -186,10 +186,10 @@
       "lat": 37.5249386,
       "lng": 126.894037,
       "jobs": {
+        "lastChecked": "2026-07-05T14:11:34.422Z",
         "saramin": false,
         "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-07-02T04:38:31.795Z (MANUAL)"
+        "work24": false
       }
     },
     {
@@ -220,7 +220,7 @@
       "lat": 37.5723529,
       "lng": 126.8200471,
       "jobs": {
-        "lastChecked": "2026-07-02T04:38:31.795Z",
+        "lastChecked": "2026-07-05T14:11:39.285Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -261,7 +261,7 @@
       "lat": 37.5260629,
       "lng": 126.8611499,
       "jobs": {
-        "lastChecked": "2026-07-02T04:38:34.116Z",
+        "lastChecked": "2026-07-05T14:11:49.555Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -302,7 +302,7 @@
       "lat": 37.5202291,
       "lng": 126.890132,
       "jobs": {
-        "lastChecked": "2026-07-02T04:38:39.333Z",
+        "lastChecked": "2026-07-05T14:11:54.160Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -338,7 +338,7 @@
       "lat": 37.5320913,
       "lng": 126.9050405,
       "jobs": {
-        "lastChecked": "2026-07-02T04:38:42.847Z",
+        "lastChecked": "2026-07-05T14:11:57.536Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -376,7 +376,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:47.227Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:01.475Z (MANUAL)"
       }
     },
     {
@@ -409,14 +409,14 @@
       "lng": 126.9021242,
       "jobs": {
         "saramin": false,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:47.228Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:01.475Z (MANUAL)"
       }
     },
     {
       "id": "1100014",
-      "name": "주식회사 소셜링",
+      "name": "(주)소셜링",
       "region": "영등포구",
       "address": "서울특별시 영등포구 생각공장 당산",
       "logo": "소셜링-로고_검 (1).png",
@@ -447,9 +447,9 @@
       "lng": 126.8982814,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:47.228Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:01.476Z (MANUAL)"
       }
     },
     {
@@ -492,7 +492,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:47.228Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:01.476Z (MANUAL)"
       }
     },
     {
@@ -529,10 +529,10 @@
       "lat": 37.5198962,
       "lng": 126.8982814,
       "jobs": {
+        "lastChecked": "2026-07-05T14:12:01.476Z",
         "saramin": true,
         "jobkorea": true,
-        "work24": false,
-        "lastChecked": "2026-07-02T04:38:47.228Z (MANUAL)"
+        "work24": true
       }
     },
     {
@@ -567,10 +567,10 @@
       "lat": 37.5589241,
       "lng": 126.8619549,
       "jobs": {
+        "lastChecked": "2026-07-05T14:12:04.770Z",
         "saramin": false,
         "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-07-02T04:38:47.228Z (MANUAL)"
+        "work24": false
       }
     },
     {
@@ -601,7 +601,7 @@
       "lat": 37.5295614,
       "lng": 126.8575995,
       "jobs": {
-        "lastChecked": "2026-07-02T04:38:47.229Z",
+        "lastChecked": "2026-07-05T14:12:08.615Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -634,10 +634,10 @@
       "lat": 37.5590813,
       "lng": 126.841834,
       "jobs": {
-        "saramin": true,
+        "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:50.502Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:11.952Z (MANUAL)"
       }
     },
     {
@@ -674,9 +674,9 @@
       "lng": 126.8919793,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:50.502Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:11.952Z (MANUAL)"
       }
     },
     {
@@ -710,10 +710,10 @@
       "lat": 37.5391902,
       "lng": 126.890327,
       "jobs": {
+        "lastChecked": "2026-07-05T14:12:11.953Z",
         "saramin": true,
-        "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-07-02T04:38:50.502Z (MANUAL)"
+        "jobkorea": true,
+        "work24": true
       }
     },
     {
@@ -757,10 +757,10 @@
       "lat": 37.536724,
       "lng": 126.8967848,
       "jobs": {
-        "saramin": false,
-        "jobkorea": false,
+        "saramin": true,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:50.502Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:28.317Z (MANUAL)"
       }
     },
     {
@@ -794,7 +794,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:50.503Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:28.317Z (MANUAL)"
       }
     },
     {
@@ -829,7 +829,7 @@
       "lat": 37.5359593,
       "lng": 126.9014962,
       "jobs": {
-        "lastChecked": "2026-07-02T04:38:50.503Z",
+        "lastChecked": "2026-07-05T14:12:28.317Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -873,7 +873,7 @@
         "saramin": false,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:53.826Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:32.964Z (MANUAL)"
       }
     },
     {
@@ -914,7 +914,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:53.826Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:32.964Z (MANUAL)"
       }
     },
     {
@@ -954,7 +954,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:53.827Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:32.964Z (MANUAL)"
       }
     },
     {
@@ -990,9 +990,9 @@
       "lng": 126.9041405,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:53.827Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:32.964Z (MANUAL)"
       }
     },
     {
@@ -1034,10 +1034,10 @@
       "lat": 37.526082,
       "lng": 126.8841518,
       "jobs": {
+        "lastChecked": "2026-07-05T14:12:32.965Z",
         "saramin": false,
         "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-07-02T04:38:53.827Z"
+        "work24": false
       }
     },
     {
@@ -1078,7 +1078,7 @@
       "lat": 37.5641278,
       "lng": 126.8368211,
       "jobs": {
-        "lastChecked": "2026-07-02T04:38:53.827Z",
+        "lastChecked": "2026-07-05T14:12:36.369Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -1128,7 +1128,7 @@
         "saramin": false,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:57.093Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:39.481Z (MANUAL)"
       }
     },
     {
@@ -1171,7 +1171,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:57.093Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:39.481Z (MANUAL)"
       }
     },
     {
@@ -1205,7 +1205,7 @@
         "saramin": false,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:38:57.093Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:39.481Z (MANUAL)"
       }
     },
     {
@@ -1244,10 +1244,10 @@
       "lat": 37.5226789,
       "lng": 126.9250177,
       "jobs": {
+        "lastChecked": "2026-07-05T14:12:39.481Z",
         "saramin": true,
         "jobkorea": true,
-        "work24": false,
-        "lastChecked": "2026-07-02T04:38:57.093Z (MANUAL)"
+        "work24": false
       }
     },
     {
@@ -1276,7 +1276,7 @@
       "lat": 37.5391387,
       "lng": 126.8280801,
       "jobs": {
-        "lastChecked": "2026-07-02T04:38:57.094Z",
+        "lastChecked": "2026-07-05T14:12:42.680Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -1313,7 +1313,7 @@
       "lat": 37.5187168,
       "lng": 126.9035606,
       "jobs": {
-        "lastChecked": "2026-07-02T04:39:00.436Z",
+        "lastChecked": "2026-07-05T14:12:45.936Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -1349,10 +1349,10 @@
       "lat": 37.5290653,
       "lng": 126.9218996,
       "jobs": {
+        "lastChecked": "2026-07-05T14:12:49.154Z",
         "saramin": true,
         "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-07-02T04:39:03.994Z (MANUAL)"
+        "work24": false
       }
     },
     {
@@ -1371,7 +1371,9 @@
       "awardAchievements": [],
       "benefits": "1. 휴무/기념일(주5일 근무, 경조휴가)\n2. 건강검진 지원\n3. 4대보험(국민연금, 의료보험, 산재보험, 고용보험)\n4. 근무환경/편의(식대)",
       "workEnvironment": [],
-      "images": [],
+      "images": [
+        "거목정보산업(주) 로고.jpg"
+      ],
       "website": "",
       "description": "거목정보산업은 2001년 설립 이후 인쇄·출판 및 기록매체 복제 분야에서 전문성을 쌓아온 기업입니다. 고해상도 상업 인쇄물 제작, 사무기기 임대, 전산 소모품 공급 등 통합 기업지원 서비스를 제공하며, 공공기관과 민간기업의 신뢰를 바탕으로 고객의 업무 효율성과 사무 환경 개선에 기여하고 있습니다.",
       "map_display_status": "VISIBLE",
@@ -1381,7 +1383,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:03.994Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:57.378Z (MANUAL)"
       }
     },
     {
@@ -1420,7 +1422,7 @@
         "saramin": true,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:03.994Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:57.378Z (MANUAL)"
       }
     },
     {
@@ -1459,7 +1461,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:03.995Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:12:57.378Z (MANUAL)"
       }
     },
     {
@@ -1485,7 +1487,7 @@
       "lat": 37.5328045,
       "lng": 126.8650346,
       "jobs": {
-        "lastChecked": "2026-07-02T04:39:03.995Z",
+        "lastChecked": "2026-07-05T14:12:57.379Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -1519,7 +1521,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:07.856Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:13:01.801Z (MANUAL)"
       }
     },
     {
@@ -1559,7 +1561,7 @@
       "lat": 37.5260497,
       "lng": 126.928296,
       "jobs": {
-        "lastChecked": "2026-07-02T04:39:07.856Z",
+        "lastChecked": "2026-07-05T14:13:01.801Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -1598,7 +1600,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:11.778Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:13:05.429Z (MANUAL)"
       }
     },
     {
@@ -1622,17 +1624,19 @@
       "awardAchievements": [],
       "benefits": "1. 국민연금, 고용보험, 산재보험, 건강보험\n2. 주5일제, 연차제도, 경조휴가, 포상휴가, 출산휴가, 육아휴직, 노동절 휴무, 창립일 행사, 워크샵/MT, 체육대회\n3. 퇴직금, 경조금, 자녀교육비, 사내대출, 차량유류비, 장기근속 포상, 우수사원 포상제도, 가족 의료비 지원, 임지원 교육비, 직책수당, 주차 지원, 야간교통비 지급, 각종 기념일 선물, 도서 구입비 지원, 헬스비, 주거비 지원\n4. 카페테리아, 사내도서관, 주차장, 수면실, 여성전용휴게실\n5. 사내 동호회, 건강검진, 점심 식사 지원, 근무복 지원",
       "workEnvironment": [],
-      "images": [],
+      "images": [
+        "(주)누비콤 로고.jpg"
+      ],
       "website": "https://www.nubicom.co.kr",
       "description": "(주)누비콤은 NI 공식 디스트리뷰터로서 계측·측정 솔루션 분야를 선도하는 전문기업입니다, NI, R&S, 비아비솔루션 등 글로벌 계측기 브랜드의 제품과 솔루션을 공급하며, 교육·기술지원·검교정까지 아우르는 원스톱 서비스를 제공합니다. 국내외 네트워크와 축적된 기술 노하우를 바탕으로 산업, 연구기관, 교육 분야 고객의 혁신을 지원하고 있습니다.",
       "map_display_status": "VISIBLE",
       "lat": 37.5147541,
       "lng": 126.8989475,
       "jobs": {
-        "saramin": true,
+        "saramin": false,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:11.778Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:13:05.429Z (MANUAL)"
       }
     },
     {
@@ -1656,7 +1660,7 @@
       "benefits": "1. 국민연금, 고용보험, 산재보험, 건강보험, 퇴직연금\n2. 주5일제, 연차제도, 반차제도\n3. 도서 구입비 지원",
       "workEnvironment": [],
       "images": [
-        "주식회사엔트리즈 사진1.png"
+        "주식회사엔트리즈 로고.jpg"
       ],
       "website": "https://www.sellpro.co.kr",
       "description": "주식회사 엔트리즈는 독자적인 기술력과 최적화된 인프라를 바탕으로 성장하는 통합 솔루션 에이전시입니다. 체계적인 시스템 운영과 효율적인 조직 관리, 다양한 협력사와의 네트워크를 통해 경쟁력을 강화하고 있으며, 전문인력 양성을 위한 교육과 자기개발 지원을 아끼지 않는 기업입니다. 고객과 임직원이 함께 성장하는 미래지향적인 기업문화를 만들어가고 있습니다.",
@@ -1664,10 +1668,10 @@
       "lat": 37.5399845,
       "lng": 126.8942875,
       "jobs": {
+        "lastChecked": "2026-07-05T14:13:05.429Z",
         "saramin": false,
         "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-07-02T04:39:11.778Z (MANUAL)"
+        "work24": false
       }
     },
     {
@@ -1708,9 +1712,9 @@
       "lng": 126.8360093,
       "jobs": {
         "saramin": true,
-        "jobkorea": true,
+        "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:11.778Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:13:08.913Z (MANUAL)"
       }
     },
     {
@@ -1747,7 +1751,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:11.779Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:13:08.914Z (MANUAL)"
       }
     },
     {
@@ -1781,7 +1785,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:11.779Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:13:08.914Z (MANUAL)"
       }
     },
     {
@@ -1823,7 +1827,7 @@
         "saramin": true,
         "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:11.779Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:13:08.914Z (MANUAL)"
       }
     },
     {
@@ -1852,7 +1856,7 @@
       "lat": 37.5160869,
       "lng": 126.8867896,
       "jobs": {
-        "lastChecked": "2026-07-02T04:39:11.779Z",
+        "lastChecked": "2026-07-05T14:13:08.914Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -1893,7 +1897,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": true,
-        "lastChecked": "2026-07-02T04:39:15.105Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:13:12.177Z (MANUAL)"
       }
     },
     {
@@ -1928,7 +1932,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:15.105Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:13:12.177Z (MANUAL)"
       }
     },
     {
@@ -1960,10 +1964,10 @@
       "lat": 37.5272327,
       "lng": 126.9167886,
       "jobs": {
+        "lastChecked": "2026-07-05T14:13:12.177Z",
         "saramin": false,
         "jobkorea": false,
-        "work24": false,
-        "lastChecked": "2026-07-02T04:39:15.105Z (MANUAL)"
+        "work24": false
       }
     },
     {
@@ -1995,7 +1999,7 @@
       "lat": 37.5664729,
       "lng": 126.8375354,
       "jobs": {
-        "lastChecked": "2026-07-02T04:39:15.105Z",
+        "lastChecked": "2026-07-05T14:13:16.661Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -2037,7 +2041,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:18.468Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:13:19.826Z (MANUAL)"
       }
     },
     {
@@ -2072,7 +2076,7 @@
       "lat": 37.5147541,
       "lng": 126.8989475,
       "jobs": {
-        "lastChecked": "2026-07-02T04:39:18.468Z",
+        "lastChecked": "2026-07-05T14:13:19.826Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -2114,9 +2118,9 @@
       "lng": 126.8859677,
       "jobs": {
         "saramin": true,
-        "jobkorea": false,
+        "jobkorea": true,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:22.070Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:13:38.502Z (MANUAL)"
       }
     },
     {
@@ -2138,7 +2142,9 @@
       "awardAchievements": [],
       "benefits": "1. 4대보험\n2. 인센티브",
       "workEnvironment": [],
-      "images": [],
+      "images": [
+        "주식회사쉐프푸드.png"
+      ],
       "website": "https://www.babplus.net/index",
       "description": "쉐프푸드㈜는 식품 제조 및 유통 전문기업으로, 안전하고 품질 높은 식품을 생산·공급하며 고객의 건강한 식문화를 선도하고 있습니다. 체계적인 품질관리와 위생 시스템을 바탕으로 다양한 식품을 개발·제조하고 있으며, 고객 만족과 지속적인 혁신을 통해 경쟁력을 강화하고 있습니다.",
       "map_display_status": "VISIBLE",
@@ -2148,7 +2154,7 @@
         "saramin": false,
         "jobkorea": false,
         "work24": false,
-        "lastChecked": "2026-07-02T04:39:22.070Z (MANUAL)"
+        "lastChecked": "2026-07-05T14:13:38.502Z (MANUAL)"
       }
     },
     {
@@ -2179,7 +2185,7 @@
       "lat": 37.5698909,
       "lng": 126.8300142,
       "jobs": {
-        "lastChecked": "2026-07-02T04:39:22.070Z",
+        "lastChecked": "2026-07-05T14:13:38.502Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -2208,7 +2214,7 @@
       "lat": 37.5232902,
       "lng": 126.8640335,
       "jobs": {
-        "lastChecked": "2026-07-02T04:39:25.602Z",
+        "lastChecked": "2026-07-05T14:13:43.102Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -2249,7 +2255,7 @@
       "lat": 37.4905783,
       "lng": 126.907089,
       "jobs": {
-        "lastChecked": "2026-07-02T04:39:28.994Z",
+        "lastChecked": "2026-07-05T14:13:47.128Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
@@ -2290,12 +2296,12 @@
       "lat": 37.5292309,
       "lng": 126.9248721,
       "jobs": {
-        "lastChecked": "2026-07-02T04:39:32.710Z",
+        "lastChecked": "2026-07-05T14:13:50.629Z",
         "saramin": true,
         "jobkorea": true,
         "work24": true
       }
     }
   ],
-  "lastUpdated": "2026-07-02T07:15:22.105Z"
+  "lastUpdated": "2026-07-05T14:13:53.985Z"
 }
