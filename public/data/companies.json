@@ -580,15 +580,22 @@
       "address": "서울특별시 강서구 국회대로7길 63",
       "logo": "킴블스로고.jpg",
       "industry": "제조",
-      "industryDetail": "배낭,천막,방탄복 등 특수섬유제품제작",
+      "industryDetail": "특수섬유제품제작(피복.배낭,텐트외)",
       "employees": 47,
       "certifications": [
         "지역우수",
         "청년도약"
       ],
-      "governmentCertifications": [],
-      "awardAchievements": [],
-      "benefits": "1.경조휴가,반차,육아휴직,남성출산휴가\n2.직무능력향상교육,자격증취득지원\n3.우수사원포상,퇴직연금,명절선물,각종수당지원\n4.구내식당,휴게실/수면실,회사전용사옥\n5. 장애인 화장실,점심식사제공,가족돌봄휴가",
+      "governmentCertifications": [
+        "가족친화인증",
+        "경영혁신기업",
+        "기술혁신기업",
+        "근로자휴가지원사업참여"
+      ],
+      "awardAchievements": [
+        "2024 중소기업인대회 대통령상수상"
+      ],
+      "benefits": "1.야근강요 안함\n2.자유로운 연차사용\n3.우수사원포상,퇴직연금,명절선물,각종수당지원\n4.구내식당,휴게실/수면실,회사전용사옥\n5. 점심식사제공",
       "workEnvironment": [],
       "images": [
         "킴블스사옥.png",
@@ -2303,5 +2310,5 @@
       }
     }
   ],
-  "lastUpdated": "2026-07-05T14:13:53.985Z"
+  "lastUpdated": "2026-07-06T05:38:06.530Z"
 }
